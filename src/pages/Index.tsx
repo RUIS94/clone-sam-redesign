@@ -496,10 +496,268 @@ const Index = () => {
         </div>
       </section>
 
-      {/* Footer */}
-      <footer className="border-t border-border py-12">
+      {/* Company Logos Section */}
+      <section className="py-16 bg-background">
         <div className="container mx-auto px-4">
-          <div className="text-center text-muted-foreground">
+          <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 text-foreground">
+            Join 2,000+ target-hitting enterprise salespeople
+          </h2>
+          <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-7 gap-8 items-center justify-items-center opacity-60">
+            {[1, 2, 3, 4, 5, 6, 7].map((i) => (
+              <div key={i} className="w-32 h-16 bg-secondary rounded flex items-center justify-center">
+                <span className="text-muted-foreground text-sm">Logo {i}</span>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Next Generation Deal Qualification */}
+      <section className="py-20 bg-secondary">
+        <div className="container mx-auto px-4">
+          <div className="text-center mb-6">
+            <Badge className="mb-4 bg-accent/10 text-accent border-accent/20">
+              Magic
+            </Badge>
+          </div>
+          <h2 className="text-3xl md:text-5xl font-bold text-center mb-6 text-foreground">
+            Next Generation Deal Qualification
+          </h2>
+          <p className="text-xl text-center text-muted-foreground max-w-3xl mx-auto mb-16">
+            Powered by AI, SAM helps you focus on high value deals with proven probability of closing and discover sales opportunities that you didn't know existed.
+          </p>
+
+          <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+            <Card className="border-border">
+              <CardContent className="pt-6">
+                <h3 className="text-xl font-bold mb-4 text-foreground">360° Collaboration</h3>
+                <p className="text-muted-foreground mb-4">
+                  Enterprise sales qualification is a team effort.
+                </p>
+                <p className="text-muted-foreground">
+                  SAM provides a real-time qualification playbook for every customer interaction, giving your team deeper insights. With multi-source assessments, you enhance forecast accuracy and drive better outcomes.
+                </p>
+              </CardContent>
+            </Card>
+
+            <Card className="border-border">
+              <CardContent className="pt-6">
+                <h3 className="text-xl font-bold mb-4 text-foreground">Amplified Qualification</h3>
+                <p className="text-muted-foreground mb-4">
+                  Missed questions lead to missed forecasts.
+                </p>
+                <p className="text-muted-foreground">
+                  SAM sharpens real-time questioning and listening skills, ensuring sales teams capture and validate critical customer insights, boosting forecast accuracy and account strategies.
+                </p>
+              </CardContent>
+            </Card>
+
+            <Card className="border-border">
+              <CardContent className="pt-6">
+                <h3 className="text-xl font-bold mb-4 text-foreground">Exception Alert</h3>
+                <p className="text-muted-foreground mb-4">
+                  Keeping up with shifting client priorities is tougher than ever, impacting forecast accuracy.
+                </p>
+                <p className="text-muted-foreground">
+                  SAM detects deal risks in real time and suggests follow-up actions to keep opportunities on track.
+                </p>
+              </CardContent>
+            </Card>
+          </div>
+        </div>
+      </section>
+
+      {/* Request Demo Section */}
+      <section id="request" className="py-20 bg-background">
+        <div className="container mx-auto px-4 max-w-4xl">
+          <h2 className="text-3xl md:text-5xl font-bold text-center mb-6 text-foreground">
+            Request Demo
+          </h2>
+          <p className="text-xl text-center text-muted-foreground mb-12">
+            Discover how SAM can help you win, keep and grow good customers and salespeople.
+          </p>
+
+          <div className="grid md:grid-cols-3 gap-6 mb-12">
+            <Card className="border-border text-center">
+              <CardContent className="pt-6">
+                <p className="text-sm text-muted-foreground mb-2">Reduce</p>
+                <p className="font-semibold text-foreground">Meeting preparation time</p>
+              </CardContent>
+            </Card>
+            <Card className="border-border text-center">
+              <CardContent className="pt-6">
+                <p className="text-sm text-muted-foreground mb-2">Increase</p>
+                <p className="font-semibold text-foreground">ROI on face-to-face selling time</p>
+              </CardContent>
+            </Card>
+            <Card className="border-border text-center">
+              <CardContent className="pt-6">
+                <p className="text-sm text-muted-foreground mb-2">Close</p>
+                <p className="font-semibold text-foreground">More deals faster</p>
+              </CardContent>
+            </Card>
+          </div>
+
+          <Card className="border-border">
+            <CardContent className="pt-8">
+              <form className="space-y-6">
+                <p className="text-sm text-muted-foreground mb-6">
+                  "*" indicates required fields
+                </p>
+
+                <div className="grid md:grid-cols-2 gap-6">
+                  <div className="space-y-2">
+                    <label htmlFor="name" className="text-sm font-medium text-foreground">
+                      Your name*
+                    </label>
+                    <input
+                      type="text"
+                      id="name"
+                      className="flex h-10 w-full rounded-md border border-input bg-background px-3 py-2 text-sm text-foreground ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent focus-visible:ring-offset-2"
+                      required
+                    />
+                  </div>
+
+                  <div className="space-y-2">
+                    <label htmlFor="company" className="text-sm font-medium text-foreground">
+                      Company / Organization*
+                    </label>
+                    <input
+                      type="text"
+                      id="company"
+                      className="flex h-10 w-full rounded-md border border-input bg-background px-3 py-2 text-sm text-foreground ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent focus-visible:ring-offset-2"
+                      required
+                    />
+                  </div>
+
+                  <div className="space-y-2">
+                    <label htmlFor="email" className="text-sm font-medium text-foreground">
+                      Your work e-mail*
+                    </label>
+                    <input
+                      type="email"
+                      id="email"
+                      className="flex h-10 w-full rounded-md border border-input bg-background px-3 py-2 text-sm text-foreground ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent focus-visible:ring-offset-2"
+                      required
+                    />
+                  </div>
+
+                  <div className="space-y-2">
+                    <label htmlFor="website" className="text-sm font-medium text-foreground">
+                      Company website*
+                    </label>
+                    <input
+                      type="url"
+                      id="website"
+                      className="flex h-10 w-full rounded-md border border-input bg-background px-3 py-2 text-sm text-foreground ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent focus-visible:ring-offset-2"
+                      required
+                    />
+                  </div>
+
+                  <div className="space-y-2">
+                    <label htmlFor="phone" className="text-sm font-medium text-foreground">
+                      Your phone number*
+                    </label>
+                    <input
+                      type="tel"
+                      id="phone"
+                      className="flex h-10 w-full rounded-md border border-input bg-background px-3 py-2 text-sm text-foreground ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent focus-visible:ring-offset-2"
+                      required
+                    />
+                  </div>
+
+                  <div className="space-y-2">
+                    <label htmlFor="salespeople" className="text-sm font-medium text-foreground">
+                      How many salespeople in your company*
+                    </label>
+                    <input
+                      type="number"
+                      id="salespeople"
+                      min="1"
+                      className="flex h-10 w-full rounded-md border border-input bg-background px-3 py-2 text-sm text-foreground ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent focus-visible:ring-offset-2"
+                      required
+                    />
+                  </div>
+                </div>
+
+                <div className="space-y-2">
+                  <label htmlFor="message" className="text-sm font-medium text-foreground">
+                    Message
+                  </label>
+                  <textarea
+                    id="message"
+                    rows={4}
+                    className="flex w-full rounded-md border border-input bg-background px-3 py-2 text-sm text-foreground ring-offset-background placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent focus-visible:ring-offset-2"
+                  />
+                </div>
+
+                <Button type="submit" className="w-full bg-accent text-accent-foreground hover:bg-accent/90">
+                  Submit Request
+                </Button>
+              </form>
+            </CardContent>
+          </Card>
+        </div>
+      </section>
+
+      {/* Footer */}
+      <footer className="bg-primary text-primary-foreground py-16">
+        <div className="container mx-auto px-4">
+          <div className="grid md:grid-cols-4 gap-8 mb-8">
+            <div>
+              <h3 className="text-xl font-bold mb-4">SAM.Coach</h3>
+              <p className="text-sm mb-4 opacity-90">
+                123 Business Street<br />
+                San Francisco, CA 94105<br />
+                United States
+              </p>
+              <p className="text-sm opacity-90">
+                Email: info@sam.coach<br />
+                Phone: +1 (555) 123-4567
+              </p>
+            </div>
+
+            <div>
+              <h4 className="font-semibold mb-4">What SAM does</h4>
+              <ul className="space-y-2 text-sm opacity-90">
+                <li><a href="#" className="hover:text-accent transition-colors">Deal Qualification</a></li>
+                <li><a href="#" className="hover:text-accent transition-colors">Sales Coaching</a></li>
+                <li><a href="#" className="hover:text-accent transition-colors">Forecasting</a></li>
+                <li><a href="#" className="hover:text-accent transition-colors">Meeting Intelligence</a></li>
+                <li><a href="#" className="hover:text-accent transition-colors">Revenue Analytics</a></li>
+              </ul>
+            </div>
+
+            <div>
+              <h4 className="font-semibold mb-4">Meet SAM</h4>
+              <ul className="space-y-2 text-sm opacity-90">
+                <li><a href="#" className="hover:text-accent transition-colors">About Us</a></li>
+                <li><a href="#" className="hover:text-accent transition-colors">Our Team</a></li>
+                <li><a href="#" className="hover:text-accent transition-colors">Careers</a></li>
+                <li><a href="#" className="hover:text-accent transition-colors">Press</a></li>
+                <li><a href="#" className="hover:text-accent transition-colors">Contact</a></li>
+              </ul>
+            </div>
+
+            <div>
+              <h4 className="font-semibold mb-4">Newsletter</h4>
+              <p className="text-sm mb-4 opacity-90">
+                Stay connected with the latest updates and insights
+              </p>
+              <form className="space-y-3">
+                <input
+                  type="email"
+                  placeholder="Your email"
+                  className="flex h-10 w-full rounded-md border border-input bg-background px-3 py-2 text-sm text-foreground ring-offset-background placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent focus-visible:ring-offset-2"
+                />
+                <Button type="submit" className="w-full bg-accent text-accent-foreground hover:bg-accent/90">
+                  Subscribe
+                </Button>
+              </form>
+            </div>
+          </div>
+
+          <div className="border-t border-primary-foreground/20 pt-8 text-center text-sm opacity-75">
             <p>© 2025 SAM.Coach. All rights reserved.</p>
           </div>
         </div>
