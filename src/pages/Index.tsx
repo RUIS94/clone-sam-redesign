@@ -3,6 +3,7 @@ import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { Card, CardContent } from "@/components/ui/card";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
+import logo from "@/components/logo.png";
 import { CheckCircle, Target, Users, Clock, Shield, TrendingUp, Zap, Eye, Puzzle, Heart, ClockIcon, Monitor, Check } from "lucide-react";
 
 const Index = () => {
@@ -10,13 +11,16 @@ const Index = () => {
   return (
     <div className="min-h-screen bg-background">
       {/* Navigation */}
-      <nav className="sticky top-0 z-50 border-b border-border bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
+      <nav className="sticky top-0 z-50 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
         <div className="container mx-auto px-4 py-4">
           <div className="flex items-center justify-between">
-            <div className="text-2xl font-bold text-foreground">
-              SAM.Coach
+            <div className="flex items-center">
+              <img src={logo} alt="GTM8 logo" className="h-8 w-auto" />
             </div>
             <div className="hidden md:flex items-center gap-8">
+              <a href="#product" className="text-sm font-medium text-foreground hover:text-accent transition-colors">
+                Product
+              </a>
               <a href="#solutions" className="text-sm font-medium text-foreground hover:text-accent transition-colors">
                 Solutions
               </a>
@@ -48,8 +52,8 @@ const Index = () => {
           <Badge className="mb-6 bg-accent/10 text-accent border-accent/20 hover:bg-accent/20">
             35% Boost in Win Rate
           </Badge>
-          <h1 className="text-4xl md:text-6xl font-bold mb-6 text-foreground">
-            An <span className="text-accent">AI</span> Sales-Execution Agent to Optimize{" "}
+          <h1 className="text-4xl md:text-6xl font-bold mb-6 text-foreground leading-snug md:leading-tight">
+            An <span className="text-accent">AI</span> GTM Agent to Optimize{" "}
             <span className="text-accent">Deal qualification</span>,{" "}
             <span className="text-accent">Coaching</span> and{" "}
             <span className="text-accent">Forecasting</span>
@@ -76,7 +80,7 @@ const Index = () => {
               Solutions
             </Badge>
             <h2 className="text-3xl md:text-5xl font-bold text-foreground">
-              How SAM Can <span className="text-accent">Work For You</span>
+              How GTM8 Can <span className="text-accent">Work For You</span>
             </h2>
           </div>
 
@@ -504,10 +508,18 @@ const Index = () => {
           <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 text-foreground">
             Join 2,000+ target-hitting enterprise salespeople
           </h2>
-          <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-7 gap-8 items-center justify-items-center opacity-60">
-            {[1, 2, 3, 4, 5, 6, 7].map((i) => (
-              <div key={i} className="w-32 h-16 bg-secondary rounded flex items-center justify-center">
-                <span className="text-muted-foreground text-sm">Logo {i}</span>
+          <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-7 items-center justify-items-center opacity-60">
+            {[
+              "https://sam.coach/wp-content/uploads/2023/03/Image.png",
+              "https://sam.coach/wp-content/uploads/2023/03/Image1.png",
+              "https://sam.coach/wp-content/uploads/2023/03/Image2.png",
+              "https://sam.coach/wp-content/uploads/2023/03/Image3.png",
+              "https://sam.coach/wp-content/uploads/2023/03/Image4.png",
+              "https://sam.coach/wp-content/uploads/2023/03/Image7.png",
+              "https://sam.coach/wp-content/uploads/2023/03/Image6.png",
+            ].map((src, i) => (
+              <div key={src} className="w-32 h-16 rounded flex items-center justify-center">
+                <img src={src} alt={`Logo ${i + 1}`} className="max-h-12 w-auto object-contain" loading="lazy" />
               </div>
             ))}
           </div>
@@ -526,7 +538,7 @@ const Index = () => {
             Next Generation Deal Qualification
           </h2>
           <p className="text-xl text-center text-muted-foreground max-w-3xl mx-auto mb-16">
-            Powered by AI, SAM helps you focus on high value deals with proven probability of closing and discover sales opportunities that you didn't know existed.
+            Powered by AI, GTM8 helps you focus on high value deals with proven probability of closing and discover sales opportunities that you didn't know existed.
           </p>
 
           <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
@@ -537,7 +549,7 @@ const Index = () => {
                   Enterprise sales qualification is a team effort.
                 </p>
                 <p className="text-muted-foreground">
-                  SAM provides a real-time qualification playbook for every customer interaction, giving your team deeper insights. With multi-source assessments, you enhance forecast accuracy and drive better outcomes.
+                  GTM8 provides a real-time qualification playbook for every customer interaction, giving your team deeper insights. With multi-source assessments, you enhance forecast accuracy and drive better outcomes.
                 </p>
               </CardContent>
             </Card>
@@ -549,7 +561,7 @@ const Index = () => {
                   Missed questions lead to missed forecasts.
                 </p>
                 <p className="text-muted-foreground">
-                  SAM sharpens real-time questioning and listening skills, ensuring sales teams capture and validate critical customer insights, boosting forecast accuracy and account strategies.
+                  GTM8 sharpens real-time questioning and listening skills, ensuring sales teams capture and validate critical customer insights, boosting forecast accuracy and account strategies.
                 </p>
               </CardContent>
             </Card>
@@ -561,7 +573,7 @@ const Index = () => {
                   Keeping up with shifting client priorities is tougher than ever, impacting forecast accuracy.
                 </p>
                 <p className="text-muted-foreground">
-                  SAM detects deal risks in real time and suggests follow-up actions to keep opportunities on track.
+                  GTM8 detects deal risks in real time and suggests follow-up actions to keep opportunities on track.
                 </p>
               </CardContent>
             </Card>
@@ -768,10 +780,10 @@ const Index = () => {
             Request Demo
           </h2>
           <p className="text-xl text-center text-muted-foreground mb-12">
-            Discover how SAM can help you win, keep and grow good customers and salespeople.
+            Discover how GTM8 can help you win, keep and grow good customers and salespeople.
           </p>
 
-          <div className="grid md:grid-cols-3 gap-6 mb-12">
+          {/*<div className="grid md:grid-cols-3 gap-6 mb-12">
             <Card className="border-border text-center">
               <CardContent className="pt-6">
                 <p className="text-sm text-muted-foreground mb-2">Reduce</p>
@@ -790,12 +802,12 @@ const Index = () => {
                 <p className="font-semibold text-foreground">More deals faster</p>
               </CardContent>
             </Card>
-          </div>
+          </div>*/}
 
           <Card className="border-border">
             <CardContent className="pt-8">
               <form className="space-y-6">
-                <p className="text-sm text-muted-foreground mb-6">
+                <p className="text-sm text-gray-400 mb-6">
                   "*" indicates required fields
                 </p>
 
@@ -895,24 +907,23 @@ const Index = () => {
       </section>
 
       {/* Footer */}
-      <footer className="bg-primary text-primary-foreground py-16">
+      <footer className="bg-primary text-primary-foreground py-6">
         <div className="container mx-auto px-4">
           <div className="grid md:grid-cols-4 gap-8 mb-8">
             <div>
-              <h3 className="text-xl font-bold mb-4">SAM.Coach</h3>
+              <h3 className="text-xl font-bold mb-4">GTM8.ai</h3>
               <p className="text-sm mb-4 opacity-90">
-                123 Business Street<br />
-                San Francisco, CA 94105<br />
-                United States
+                8 Hadenfeld Ave<br />
+                Macquarie Park NSW 2113<br />
+                Australia
               </p>
               <p className="text-sm opacity-90">
-                Email: info@sam.coach<br />
-                Phone: +1 (555) 123-4567
+                Email: gtm@gtm8.ai <br />
               </p>
             </div>
 
             <div>
-              <h4 className="font-semibold mb-4">What SAM does</h4>
+              <h4 className="font-semibold mb-4">What GTM8 does</h4>
               <ul className="space-y-2 text-sm opacity-90">
                 <li><a href="#" className="hover:text-accent transition-colors">Deal Qualification</a></li>
                 <li><a href="#" className="hover:text-accent transition-colors">Sales Coaching</a></li>
@@ -923,7 +934,7 @@ const Index = () => {
             </div>
 
             <div>
-              <h4 className="font-semibold mb-4">Meet SAM</h4>
+              <h4 className="font-semibold mb-4">Meet GTM8</h4>
               <ul className="space-y-2 text-sm opacity-90">
                 <li><a href="#" className="hover:text-accent transition-colors">About Us</a></li>
                 <li><a href="#" className="hover:text-accent transition-colors">Our Team</a></li>
@@ -951,8 +962,15 @@ const Index = () => {
             </div>
           </div>
 
-          <div className="border-t border-primary-foreground/20 pt-8 text-center text-sm opacity-75">
-            <p>© 2025 SAM.Coach. All rights reserved.</p>
+          <div className="pt-6 flex items-center justify-between text-sm opacity-75">
+            <p>© 2025 GTM8.ai. All rights reserved.</p>
+            <div className="flex items-center gap-3">
+              <a href="#" className="hover:text-accent transition-colors">Security</a>
+              <span className="opacity-50">|</span>
+              <a href="#" className="hover:text-accent transition-colors">Privacy</a>
+              <span className="opacity-50">|</span>
+              <a href="#" className="hover:text-accent transition-colors">Terms</a>
+            </div>
           </div>
         </div>
       </footer>
