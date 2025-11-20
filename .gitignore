@@ -12,6 +12,10 @@ dist
 dist-ssr
 *.local
 
+# Unignore built assets we need to serve via GitHub Raw
+!dist/assets/
+!dist/assets/**
+
 # Editor directories and files
 .vscode/*
 !.vscode/extensions.json
