@@ -49,7 +49,7 @@ const Index = () => {
       {/* Hero Section */}
       <section className="container mx-auto px-4 pt-10 md:pt-16 pb-20 md:pb-32">
         <div className="text-center max-w-5xl mx-auto">
-          <Badge className="mb-6 bg-accent/10 text-accent border-accent/20 hover:bg-accent/20">
+          <Badge className="mb-6 bg-accent/10 text-accent hover:bg-accent/20">
             35% Boost in Win Rate
           </Badge>
           <h1 className="text-4xl md:text-6xl font-bold mb-6 text-foreground leading-snug md:leading-tight">
