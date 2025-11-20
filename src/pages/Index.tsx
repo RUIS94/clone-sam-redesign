@@ -47,7 +47,7 @@ const Index = () => {
       </nav>
 
       {/* Hero Section */}
-      <section className="container mx-auto px-4 py-20 md:py-32">
+      <section className="container mx-auto px-4 pt-10 md:pt-16 pb-20 md:pb-32">
         <div className="text-center max-w-5xl mx-auto">
           <Badge className="mb-6 bg-accent/10 text-accent border-accent/20 hover:bg-accent/20">
             35% Boost in Win Rate
@@ -167,8 +167,13 @@ const Index = () => {
                 </div>
 
                 <div className="flex items-center justify-center">
-                  <div className="w-full h-96 bg-secondary rounded-lg flex items-center justify-center">
-                    <p className="text-muted-foreground">Dashboard Preview</p>
+                  <div className="w-full h-96 bg-secondary rounded-lg overflow-hidden">
+                    <img
+                      src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=1200&q=60"
+                      alt="AE Dashboard Preview"
+                      className="w-full h-full object-cover"
+                      loading="lazy"
+                    />
                   </div>
                 </div>
               </div>
@@ -232,8 +237,13 @@ const Index = () => {
                 </div>
 
                 <div className="flex items-center justify-center">
-                  <div className="w-full h-96 bg-secondary rounded-lg flex items-center justify-center">
-                    <p className="text-muted-foreground">Dashboard Preview</p>
+                  <div className="w-full h-96 bg-secondary rounded-lg overflow-hidden">
+                    <img
+                      src="https://images.pexels.com/photos/3183150/pexels-photo-3183150.jpeg?auto=compress&cs=tinysrgb&w=1200"
+                      alt="Sales Leaders Dashboard"
+                      className="w-full h-full object-cover"
+                      loading="lazy"
+                    />
                   </div>
                 </div>
               </div>
@@ -297,8 +307,13 @@ const Index = () => {
                 </div>
 
                 <div className="flex items-center justify-center">
-                  <div className="w-full h-96 bg-secondary rounded-lg flex items-center justify-center">
-                    <p className="text-muted-foreground">Dashboard Preview</p>
+                  <div className="w-full h-96 bg-secondary rounded-lg overflow-hidden">
+                    <img
+                      src="https://images.unsplash.com/photo-1556761175-b413da4baf72?auto=format&fit=crop&w=1200&q=60"
+                      alt="Pre-Sales Dashboard"
+                      className="w-full h-full object-cover"
+                      loading="lazy"
+                    />
                   </div>
                 </div>
               </div>
@@ -362,8 +377,13 @@ const Index = () => {
                 </div>
 
                 <div className="flex items-center justify-center">
-                  <div className="w-full h-96 bg-secondary rounded-lg flex items-center justify-center">
-                    <p className="text-muted-foreground">Dashboard Preview</p>
+                  <div className="w-full h-96 bg-secondary rounded-lg overflow-hidden">
+                    <img
+                      src="https://images.unsplash.com/photo-1529333166437-7750a6dd5a70?auto=format&fit=crop&w=1200&q=60"
+                      alt="SDR Dashboard"
+                      className="w-full h-full object-cover"
+                      loading="lazy"
+                    />
                   </div>
                 </div>
               </div>
@@ -427,8 +447,13 @@ const Index = () => {
                 </div>
 
                 <div className="flex items-center justify-center">
-                  <div className="w-full h-96 bg-secondary rounded-lg flex items-center justify-center">
-                    <p className="text-muted-foreground">Dashboard Preview</p>
+                  <div className="w-full h-96 bg-secondary rounded-lg overflow-hidden">
+                    <img
+                      src="https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?auto=format&fit=crop&w=1200&q=60"
+                      alt="Enablement Dashboard"
+                      className="w-full h-full object-cover"
+                      loading="lazy"
+                    />
                   </div>
                 </div>
               </div>
@@ -492,8 +517,13 @@ const Index = () => {
                 </div>
 
                 <div className="flex items-center justify-center">
-                  <div className="w-full h-96 bg-secondary rounded-lg flex items-center justify-center">
-                    <p className="text-muted-foreground">Dashboard Preview</p>
+                  <div className="w-full h-96 bg-secondary rounded-lg overflow-hidden">
+                    <img
+                      src="https://images.unsplash.com/photo-1556761175-b413da4baf72?auto=format&fit=crop&w=1200&q=60"
+                      alt="RevOps Dashboard"
+                      className="w-full h-full object-cover"
+                      loading="lazy"
+                    />
                   </div>
                 </div>
               </div>
@@ -518,8 +548,8 @@ const Index = () => {
               "https://sam.coach/wp-content/uploads/2023/03/Image7.png",
               "https://sam.coach/wp-content/uploads/2023/03/Image6.png",
             ].map((src, i) => (
-              <div key={src} className="w-32 h-16 rounded flex items-center justify-center">
-                <img src={src} alt={`Logo ${i + 1}`} className="max-h-12 w-auto object-contain" loading="lazy" />
+              <div key={src} className="w-[5.6rem] h-[2.8rem] rounded flex items-center justify-center">
+                <img src={src} alt={`Logo ${i + 1}`} className="max-h-[2.1rem] w-auto object-contain" loading="lazy" />
               </div>
             ))}
           </div>
