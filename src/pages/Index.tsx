@@ -1,10 +1,12 @@
+import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { Card, CardContent } from "@/components/ui/card";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
-import { CheckCircle, Target, Users, Clock, Shield, TrendingUp, Zap, Eye, Puzzle, Heart, ClockIcon, Monitor } from "lucide-react";
+import { CheckCircle, Target, Users, Clock, Shield, TrendingUp, Zap, Eye, Puzzle, Heart, ClockIcon, Monitor, Check } from "lucide-react";
 
 const Index = () => {
+  const [billingCycle, setBillingCycle] = useState<"monthly" | "annual">("annual");
   return (
     <div className="min-h-screen bg-background">
       {/* Navigation */}
@@ -567,8 +569,200 @@ const Index = () => {
         </div>
       </section>
 
+      {/* Pricing Section */}
+      <section id="pricing" className="py-20 bg-background">
+        <div className="container mx-auto px-4">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl md:text-5xl font-bold mb-6 text-foreground">
+              Simple, Transparent Pricing
+            </h2>
+            <p className="text-xl text-muted-foreground mb-8">
+              Choose the plan that fits your team's needs
+            </p>
+            
+            {/* Billing Toggle */}
+            <div className="inline-flex items-center gap-4 bg-secondary p-1 rounded-lg">
+              <button
+                onClick={() => setBillingCycle("monthly")}
+                className={`px-6 py-2 rounded-md font-medium transition-colors ${
+                  billingCycle === "monthly"
+                    ? "bg-accent text-accent-foreground"
+                    : "text-muted-foreground hover:text-foreground"
+                }`}
+              >
+                Monthly
+              </button>
+              <button
+                onClick={() => setBillingCycle("annual")}
+                className={`px-6 py-2 rounded-md font-medium transition-colors ${
+                  billingCycle === "annual"
+                    ? "bg-accent text-accent-foreground"
+                    : "text-muted-foreground hover:text-foreground"
+                }`}
+              >
+                Annual
+              </button>
+            </div>
+            {billingCycle === "annual" && (
+              <p className="text-sm text-accent mt-2 font-medium">Save up to 20% with annual billing</p>
+            )}
+          </div>
+
+          <div className="grid md:grid-cols-3 gap-8 max-w-7xl mx-auto">
+            {/* AI Meeting Recorder */}
+            <Card className="border-border relative">
+              <CardContent className="pt-6">
+                <h3 className="text-2xl font-bold mb-2 text-foreground">AI Meeting Recorder</h3>
+                <p className="text-muted-foreground mb-6">
+                  Perfect for individuals and small teams
+                </p>
+                <div className="mb-6">
+                  <span className="text-4xl font-bold text-foreground">
+                    ${billingCycle === "annual" ? "19" : "24"}
+                  </span>
+                  <span className="text-muted-foreground">/user/month</span>
+                </div>
+                <Button className="w-full bg-accent text-accent-foreground hover:bg-accent/90 mb-6">
+                  Get Started
+                </Button>
+                <div className="space-y-3">
+                  <div className="flex items-start gap-3">
+                    <Check className="w-5 h-5 text-accent flex-shrink-0 mt-0.5" />
+                    <span className="text-sm text-foreground">Unlimited meeting recordings</span>
+                  </div>
+                  <div className="flex items-start gap-3">
+                    <Check className="w-5 h-5 text-accent flex-shrink-0 mt-0.5" />
+                    <span className="text-sm text-foreground">AI-powered transcription</span>
+                  </div>
+                  <div className="flex items-start gap-3">
+                    <Check className="w-5 h-5 text-accent flex-shrink-0 mt-0.5" />
+                    <span className="text-sm text-foreground">Key moments & highlights</span>
+                  </div>
+                  <div className="flex items-start gap-3">
+                    <Check className="w-5 h-5 text-accent flex-shrink-0 mt-0.5" />
+                    <span className="text-sm text-foreground">Action item extraction</span>
+                  </div>
+                  <div className="flex items-start gap-3">
+                    <Check className="w-5 h-5 text-accent flex-shrink-0 mt-0.5" />
+                    <span className="text-sm text-foreground">CRM integration</span>
+                  </div>
+                  <div className="flex items-start gap-3">
+                    <Check className="w-5 h-5 text-accent flex-shrink-0 mt-0.5" />
+                    <span className="text-sm text-foreground">Searchable transcript library</span>
+                  </div>
+                </div>
+              </CardContent>
+            </Card>
+
+            {/* Revenue Intelligence */}
+            <Card className="border-accent border-2 relative shadow-lg">
+              <div className="absolute -top-4 left-1/2 -translate-x-1/2">
+                <Badge className="bg-accent text-accent-foreground border-0">Most Popular</Badge>
+              </div>
+              <CardContent className="pt-6">
+                <h3 className="text-2xl font-bold mb-2 text-foreground">Revenue Intelligence</h3>
+                <p className="text-muted-foreground mb-6">
+                  For growing sales teams seeking insights
+                </p>
+                <div className="mb-6">
+                  <span className="text-4xl font-bold text-foreground">
+                    ${billingCycle === "annual" ? "49" : "59"}
+                  </span>
+                  <span className="text-muted-foreground">/user/month</span>
+                </div>
+                <Button className="w-full bg-accent text-accent-foreground hover:bg-accent/90 mb-6">
+                  Get Started
+                </Button>
+                <div className="space-y-3">
+                  <p className="text-sm font-semibold text-foreground mb-2">Everything in AI Meeting Recorder, plus:</p>
+                  <div className="flex items-start gap-3">
+                    <Check className="w-5 h-5 text-accent flex-shrink-0 mt-0.5" />
+                    <span className="text-sm text-foreground">Deal intelligence & scoring</span>
+                  </div>
+                  <div className="flex items-start gap-3">
+                    <Check className="w-5 h-5 text-accent flex-shrink-0 mt-0.5" />
+                    <span className="text-sm text-foreground">Pipeline analytics</span>
+                  </div>
+                  <div className="flex items-start gap-3">
+                    <Check className="w-5 h-5 text-accent flex-shrink-0 mt-0.5" />
+                    <span className="text-sm text-foreground">Conversation analytics</span>
+                  </div>
+                  <div className="flex items-start gap-3">
+                    <Check className="w-5 h-5 text-accent flex-shrink-0 mt-0.5" />
+                    <span className="text-sm text-foreground">Coaching insights</span>
+                  </div>
+                  <div className="flex items-start gap-3">
+                    <Check className="w-5 h-5 text-accent flex-shrink-0 mt-0.5" />
+                    <span className="text-sm text-foreground">Sales playbook templates</span>
+                  </div>
+                  <div className="flex items-start gap-3">
+                    <Check className="w-5 h-5 text-accent flex-shrink-0 mt-0.5" />
+                    <span className="text-sm text-foreground">Team collaboration tools</span>
+                  </div>
+                  <div className="flex items-start gap-3">
+                    <Check className="w-5 h-5 text-accent flex-shrink-0 mt-0.5" />
+                    <span className="text-sm text-foreground">Advanced reporting</span>
+                  </div>
+                </div>
+              </CardContent>
+            </Card>
+
+            {/* Revenue Accelerator */}
+            <Card className="border-border relative">
+              <CardContent className="pt-6">
+                <h3 className="text-2xl font-bold mb-2 text-foreground">Revenue Accelerator</h3>
+                <p className="text-muted-foreground mb-6">
+                  Enterprise-grade with full customization
+                </p>
+                <div className="mb-6">
+                  <span className="text-4xl font-bold text-foreground">Custom</span>
+                </div>
+                <Button className="w-full bg-accent text-accent-foreground hover:bg-accent/90 mb-6">
+                  Contact Sales
+                </Button>
+                <div className="space-y-3">
+                  <p className="text-sm font-semibold text-foreground mb-2">Everything in Revenue Intelligence, plus:</p>
+                  <div className="flex items-start gap-3">
+                    <Check className="w-5 h-5 text-accent flex-shrink-0 mt-0.5" />
+                    <span className="text-sm text-foreground">Custom AI models</span>
+                  </div>
+                  <div className="flex items-start gap-3">
+                    <Check className="w-5 h-5 text-accent flex-shrink-0 mt-0.5" />
+                    <span className="text-sm text-foreground">Advanced forecasting</span>
+                  </div>
+                  <div className="flex items-start gap-3">
+                    <Check className="w-5 h-5 text-accent flex-shrink-0 mt-0.5" />
+                    <span className="text-sm text-foreground">Multi-team rollout support</span>
+                  </div>
+                  <div className="flex items-start gap-3">
+                    <Check className="w-5 h-5 text-accent flex-shrink-0 mt-0.5" />
+                    <span className="text-sm text-foreground">Dedicated success manager</span>
+                  </div>
+                  <div className="flex items-start gap-3">
+                    <Check className="w-5 h-5 text-accent flex-shrink-0 mt-0.5" />
+                    <span className="text-sm text-foreground">Priority support & training</span>
+                  </div>
+                  <div className="flex items-start gap-3">
+                    <Check className="w-5 h-5 text-accent flex-shrink-0 mt-0.5" />
+                    <span className="text-sm text-foreground">Custom integrations</span>
+                  </div>
+                  <div className="flex items-start gap-3">
+                    <Check className="w-5 h-5 text-accent flex-shrink-0 mt-0.5" />
+                    <span className="text-sm text-foreground">SSO & advanced security</span>
+                  </div>
+                  <div className="flex items-start gap-3">
+                    <Check className="w-5 h-5 text-accent flex-shrink-0 mt-0.5" />
+                    <span className="text-sm text-foreground">SLA guarantee</span>
+                  </div>
+                </div>
+              </CardContent>
+            </Card>
+          </div>
+        </div>
+      </section>
+
       {/* Request Demo Section */}
-      <section id="request" className="py-20 bg-background">
+      <section id="request" className="py-20 bg-secondary">
         <div className="container mx-auto px-4 max-w-4xl">
           <h2 className="text-3xl md:text-5xl font-bold text-center mb-6 text-foreground">
             Request Demo
