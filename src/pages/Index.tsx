@@ -4,7 +4,7 @@ import { Badge } from "@/components/ui/badge";
 import { Card, CardContent } from "@/components/ui/card";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import logo from "@/components/logo.png";
-import { CheckCircle, Target, Users, Clock, Shield, TrendingUp, Zap, Eye, Puzzle, Heart, ClockIcon, Monitor, Check } from "lucide-react";
+import { CheckCircle, Target, Users, Clock, Shield, TrendingUp, Zap, Eye, Puzzle, Heart, ClockIcon, Monitor, Check, AlertTriangle } from "lucide-react";
 
 const Index = () => {
   const [billingCycle, setBillingCycle] = useState<"monthly" | "annual">("annual");
@@ -53,7 +53,8 @@ const Index = () => {
             35% Boost in Win Rate
           </Badge>
           <h1 className="text-4xl md:text-6xl font-bold mb-6 text-foreground leading-snug md:leading-tight">
-            An <span className="text-accent">AI</span> GTM Agent to Optimize{" "}
+            A GTM <span className="text-accent">AI</span> Agent to Optimize
+            <br />
             <span className="text-accent">Deal qualification</span>,{" "}
             <span className="text-accent">Coaching</span> and{" "}
             <span className="text-accent">Forecasting</span>
@@ -107,9 +108,9 @@ const Index = () => {
             </TabsList>
 
             <TabsContent value="ae" className="space-y-8">
-              <div className="grid md:grid-cols-2 gap-8">
+              <div>
                 <div>
-                  <div className="space-y-6">
+                  <div className="grid md:grid-cols-3 gap-6">
                     <Card className="border-border">
                       <CardContent className="pt-6">
                         <div className="flex gap-4">
@@ -156,7 +157,7 @@ const Index = () => {
                     </Card>
                   </div>
 
-                  <div className="flex gap-4 mt-6">
+                  <div className="flex gap-4 mt-6 justify-center">
                     <Button className="bg-accent text-accent-foreground hover:bg-accent/90">
                       Learn More
                     </Button>
@@ -165,24 +166,13 @@ const Index = () => {
                     </Button>
                   </div>
                 </div>
-
-                <div className="flex items-center justify-center">
-                  <div className="w-full h-96 bg-secondary rounded-lg overflow-hidden">
-                    <img
-                      src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=1200&q=60"
-                      alt="AE Dashboard Preview"
-                      className="w-full h-full object-cover"
-                      loading="lazy"
-                    />
-                  </div>
-                </div>
               </div>
             </TabsContent>
 
             <TabsContent value="leaders" className="space-y-8">
-              <div className="grid md:grid-cols-2 gap-8">
+              <div>
                 <div>
-                  <div className="space-y-6">
+                  <div className="grid md:grid-cols-3 gap-6">
                     <Card className="border-border">
                       <CardContent className="pt-6">
                         <div className="flex gap-4">
@@ -226,7 +216,7 @@ const Index = () => {
                     </Card>
                   </div>
 
-                  <div className="flex gap-4 mt-6">
+                  <div className="flex gap-4 mt-6 justify-center">
                     <Button className="bg-accent text-accent-foreground hover:bg-accent/90">
                       Learn More
                     </Button>
@@ -235,24 +225,13 @@ const Index = () => {
                     </Button>
                   </div>
                 </div>
-
-                <div className="flex items-center justify-center">
-                  <div className="w-full h-96 bg-secondary rounded-lg overflow-hidden">
-                    <img
-                      src="https://images.pexels.com/photos/3183150/pexels-photo-3183150.jpeg?auto=compress&cs=tinysrgb&w=1200"
-                      alt="Sales Leaders Dashboard"
-                      className="w-full h-full object-cover"
-                      loading="lazy"
-                    />
-                  </div>
-                </div>
               </div>
             </TabsContent>
 
             <TabsContent value="presales" className="space-y-8">
-              <div className="grid md:grid-cols-2 gap-8">
+              <div>
                 <div>
-                  <div className="space-y-6">
+                  <div className="grid md:grid-cols-3 gap-6">
                     <Card className="border-border">
                       <CardContent className="pt-6">
                         <div className="flex gap-4">
@@ -296,7 +275,7 @@ const Index = () => {
                     </Card>
                   </div>
 
-                  <div className="flex gap-4 mt-6">
+                  <div className="flex gap-4 mt-6 justify-center">
                     <Button className="bg-accent text-accent-foreground hover:bg-accent/90">
                       Learn More
                     </Button>
@@ -305,24 +284,13 @@ const Index = () => {
                     </Button>
                   </div>
                 </div>
-
-                <div className="flex items-center justify-center">
-                  <div className="w-full h-96 bg-secondary rounded-lg overflow-hidden">
-                    <img
-                      src="https://images.unsplash.com/photo-1556761175-b413da4baf72?auto=format&fit=crop&w=1200&q=60"
-                      alt="Pre-Sales Dashboard"
-                      className="w-full h-full object-cover"
-                      loading="lazy"
-                    />
-                  </div>
-                </div>
               </div>
             </TabsContent>
 
             <TabsContent value="sdr" className="space-y-8">
-              <div className="grid md:grid-cols-2 gap-8">
+              <div>
                 <div>
-                  <div className="space-y-6">
+                  <div className="grid md:grid-cols-3 gap-6">
                     <Card className="border-border">
                       <CardContent className="pt-6">
                         <div className="flex gap-4">
@@ -366,7 +334,7 @@ const Index = () => {
                     </Card>
                   </div>
 
-                  <div className="flex gap-4 mt-6">
+                  <div className="flex gap-4 mt-6 justify-center">
                     <Button className="bg-accent text-accent-foreground hover:bg-accent/90">
                       Learn More
                     </Button>
@@ -375,24 +343,13 @@ const Index = () => {
                     </Button>
                   </div>
                 </div>
-
-                <div className="flex items-center justify-center">
-                  <div className="w-full h-96 bg-secondary rounded-lg overflow-hidden">
-                    <img
-                      src="https://images.unsplash.com/photo-1529333166437-7750a6dd5a70?auto=format&fit=crop&w=1200&q=60"
-                      alt="SDR Dashboard"
-                      className="w-full h-full object-cover"
-                      loading="lazy"
-                    />
-                  </div>
-                </div>
               </div>
             </TabsContent>
 
             <TabsContent value="enablement" className="space-y-8">
-              <div className="grid md:grid-cols-2 gap-8">
+              <div>
                 <div>
-                  <div className="space-y-6">
+                  <div className="grid md:grid-cols-3 gap-6">
                     <Card className="border-border">
                       <CardContent className="pt-6">
                         <div className="flex gap-4">
@@ -445,24 +402,13 @@ const Index = () => {
                     </Button>
                   </div>
                 </div>
-
-                <div className="flex items-center justify-center">
-                  <div className="w-full h-96 bg-secondary rounded-lg overflow-hidden">
-                    <img
-                      src="https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?auto=format&fit=crop&w=1200&q=60"
-                      alt="Enablement Dashboard"
-                      className="w-full h-full object-cover"
-                      loading="lazy"
-                    />
-                  </div>
-                </div>
               </div>
             </TabsContent>
 
             <TabsContent value="revops" className="space-y-8">
-              <div className="grid md:grid-cols-2 gap-8">
+              <div>
                 <div>
-                  <div className="space-y-6">
+                  <div className="grid md:grid-cols-3 gap-6">
                     <Card className="border-border">
                       <CardContent className="pt-6">
                         <div className="flex gap-4">
@@ -506,24 +452,13 @@ const Index = () => {
                     </Card>
                   </div>
 
-                  <div className="flex gap-4 mt-6">
+                  <div className="flex gap-4 mt-6 justify-center">
                     <Button className="bg-accent text-accent-foreground hover:bg-accent/90">
                       Learn More
                     </Button>
                     <Button variant="outline" className="border-border">
                       Request a Demo
                     </Button>
-                  </div>
-                </div>
-
-                <div className="flex items-center justify-center">
-                  <div className="w-full h-96 bg-secondary rounded-lg overflow-hidden">
-                    <img
-                      src="https://images.unsplash.com/photo-1556761175-b413da4baf72?auto=format&fit=crop&w=1200&q=60"
-                      alt="RevOps Dashboard"
-                      className="w-full h-full object-cover"
-                      loading="lazy"
-                    />
                   </div>
                 </div>
               </div>
@@ -573,7 +508,8 @@ const Index = () => {
 
           <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
             <Card className="border-border">
-              <CardContent className="pt-6">
+              <CardContent className="p-10">
+                <Users className="w-8 h-8 text-accent mb-4" />
                 <h3 className="text-xl font-bold mb-4 text-foreground">360° Collaboration</h3>
                 <p className="text-muted-foreground mb-4">
                   Enterprise sales qualification is a team effort.
@@ -585,7 +521,8 @@ const Index = () => {
             </Card>
 
             <Card className="border-border">
-              <CardContent className="pt-6">
+              <CardContent className="p-10">
+                <Target className="w-8 h-8 text-accent mb-4" />
                 <h3 className="text-xl font-bold mb-4 text-foreground">Amplified Qualification</h3>
                 <p className="text-muted-foreground mb-4">
                   Missed questions lead to missed forecasts.
@@ -597,7 +534,8 @@ const Index = () => {
             </Card>
 
             <Card className="border-border">
-              <CardContent className="pt-6">
+              <CardContent className="p-10">
+                <AlertTriangle className="w-8 h-8 text-accent mb-4" />
                 <h3 className="text-xl font-bold mb-4 text-foreground">Exception Alert</h3>
                 <p className="text-muted-foreground mb-4">
                   Keeping up with shifting client priorities is tougher than ever, impacting forecast accuracy.
@@ -646,7 +584,7 @@ const Index = () => {
               </button>
             </div>
             {billingCycle === "annual" && (
-              <p className="text-sm text-accent mt-2 font-medium">Save up to 20% with annual billing</p>
+              <p className="text-sm text-accent mt-2 font-medium">Save 20%</p>
             )}
           </div>
 
@@ -937,8 +875,8 @@ const Index = () => {
       </section>
 
       {/* Footer */}
-      <footer className="bg-primary text-primary-foreground py-6">
-        <div className="container mx-auto px-4">
+      <footer className="bg-primary text-primary-foreground pt-14 pb-8">
+        <div className="container mx-auto px-6 md:px-10">
           <div className="grid md:grid-cols-4 gap-8 mb-8">
             <div>
               <h3 className="text-xl font-bold mb-4">GTM8.ai</h3>
@@ -992,7 +930,7 @@ const Index = () => {
             </div>
           </div>
 
-          <div className="pt-6 flex items-center justify-between text-sm opacity-75">
+          <div className="pt-6 flex items-center justify-between text-xs opacity-75">
             <p>© 2025 GTM8.ai. All rights reserved.</p>
             <div className="flex items-center gap-3">
               <a href="#" className="hover:text-accent transition-colors">Security</a>
