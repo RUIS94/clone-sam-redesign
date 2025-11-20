@@ -14,7 +14,7 @@ const Index = () => {
       <nav className="sticky top-0 z-50 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
         <div className="container mx-auto px-4 py-4">
           <div className="flex items-center justify-between">
-            <div className="flex items-center">
+            <div className="flex items-center ml-8">
               <img src={logo} alt="GTM8 logo" className="h-8 w-auto" />
             </div>
             <div className="hidden md:flex items-center gap-8">
@@ -34,7 +34,7 @@ const Index = () => {
                 Download
               </a>
             </div>
-            <div className="flex items-center gap-4">
+            <div className="flex items-center gap-4 mr-8">
               <Button variant="ghost" className="text-foreground">
                 Login
               </Button>
@@ -585,9 +585,9 @@ const Index = () => {
       <section id="pricing" className="py-20 bg-background">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-5xl font-bold mb-6 text-foreground">
-              Simple, Transparent Pricing
-            </h2>
+            <Badge className="mb-4 bg-accent/10 text-accent border-accent/20">
+              Pricing
+            </Badge>
             <p className="text-xl text-muted-foreground mb-8">
               Choose the plan that fits your team's needs
             </p>
