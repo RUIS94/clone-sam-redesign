@@ -43,10 +43,10 @@ const Index = () => {
               </a>
             </div>
             <div className="flex items-center gap-4 mr-2 md:mr-8">
-              <Button onClick={scrollToRequest} variant="ghost" className="text-foreground">
+              <Button onClick={scrollToRequest} variant="ghost" className="hidden md:inline-flex text-foreground">
                 Login
               </Button>
-              <Button onClick={scrollToRequest} className="bg-accent text-accent-foreground hover:bg-accent/90">
+              <Button onClick={scrollToRequest} className="bg-accent text-accent-foreground hover:bg-accent/90 ml-2">
                 Request Demo
               </Button>
               <Sheet>
@@ -195,10 +195,10 @@ const Index = () => {
                   </div>
 
                   <div className="flex gap-4 mt-6 justify-center">
-                    <Button className="bg-accent text-accent-foreground hover:bg-accent/90">
+                    <Button onClick={scrollToRequest} className="bg-accent text-accent-foreground hover:bg-accent/90">
                       Learn More
                     </Button>
-                    <Button variant="outline" className="border-border hover:!bg-secondary hover:!text-muted-foreground">
+                    <Button onClick={scrollToRequest} variant="outline" className="border-border hover:!bg-secondary hover:!text-muted-foreground">
                       Request a Demo
                     </Button>
                   </div>
@@ -254,10 +254,10 @@ const Index = () => {
                   </div>
 
                   <div className="flex gap-4 mt-6 justify-center">
-                    <Button className="bg-accent text-accent-foreground hover:bg-accent/90">
+                    <Button onClick={scrollToRequest} className="bg-accent text-accent-foreground hover:bg-accent/90">
                       Learn More
                     </Button>
-                    <Button variant="outline" className="border-border hover:!bg-secondary hover:!text-muted-foreground">
+                    <Button onClick={scrollToRequest} variant="outline" className="border-border hover:!bg-secondary hover:!text-muted-foreground">
                       Request a Demo
                     </Button>
                   </div>
@@ -313,10 +313,10 @@ const Index = () => {
                   </div>
 
                   <div className="flex gap-4 mt-6 justify-center">
-                    <Button className="bg-accent text-accent-foreground hover:bg-accent/90">
+                    <Button onClick={scrollToRequest} className="bg-accent text-accent-foreground hover:bg-accent/90">
                       Learn More
                     </Button>
-                    <Button variant="outline" className="border-border hover:!bg-secondary hover:!text-muted-foreground">
+                    <Button onClick={scrollToRequest} variant="outline" className="border-border hover:!bg-secondary hover:!text-muted-foreground">
                       Request a Demo
                     </Button>
                   </div>
@@ -372,10 +372,10 @@ const Index = () => {
                   </div>
 
                   <div className="flex gap-4 mt-6 justify-center">
-                    <Button className="bg-accent text-accent-foreground hover:bg-accent/90">
+                    <Button onClick={scrollToRequest} className="bg-accent text-accent-foreground hover:bg-accent/90">
                       Learn More
                     </Button>
-                    <Button variant="outline" className="border-border hover:!bg-secondary hover:!text-muted-foreground">
+                    <Button onClick={scrollToRequest} variant="outline" className="border-border hover:!bg-secondary hover:!text-muted-foreground">
                       Request a Demo
                     </Button>
                   </div>
@@ -431,10 +431,10 @@ const Index = () => {
                   </div>
 
                   <div className="flex gap-4 mt-6">
-                    <Button className="bg-accent text-accent-foreground hover:bg-accent/90">
+                    <Button onClick={scrollToRequest} className="bg-accent text-accent-foreground hover:bg-accent/90">
                       Learn More
                     </Button>
-                    <Button variant="outline" className="border-border hover:!bg-secondary hover:!text-muted-foreground">
+                    <Button onClick={scrollToRequest} variant="outline" className="border-border hover:!bg-secondary hover:!text-muted-foreground">
                       Request a Demo
                     </Button>
                   </div>
