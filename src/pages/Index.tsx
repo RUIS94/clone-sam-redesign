@@ -125,7 +125,7 @@ const Index = () => {
             </div>
             <TabsList className="hidden md:grid w-full grid-cols-3 md:grid-cols-6 gap-2 md:gap-4 mb-12 bg-background">
               <TabsTrigger value="ae" className="px-2 md:px-3 py-1 md:py-1.5 text-xs md:text-sm data-[state=active]:bg-accent data-[state=active]:text-accent-foreground">
-                AE
+                Account Executive 
               </TabsTrigger>
               <TabsTrigger value="leaders" className="px-2 md:px-3 py-1 md:py-1.5 text-xs md:text-sm data-[state=active]:bg-accent data-[state=active]:text-accent-foreground">
                 Sales Leaders

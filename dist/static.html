@@ -128,7 +128,7 @@
 
         <div class="md:hidden mb-6">
           <select id="solutions-select" class="w-full border border-input bg-background rounded-md px-3 py-2 text-sm">
-            <option value="ae">AE</option>
+            <option value="ae">Account Executive</option>
             <option value="leaders">Sales Leaders</option>
             <option value="presales">Pre-Sales</option>
             <option value="sdr">SDR</option>
@@ -137,12 +137,12 @@
           </select>
         </div>
         <div id="solutions-tabs" class="hidden md:grid w-full grid-cols-3 md:grid-cols-6 gap-2 md:gap-4 mb-12 bg-background">
-          <button data-tab="ae" class="px-2 md:px-3 py-1 md:py-1.5 text-xs md:text-sm font-medium rounded-sm bg-accent text-accent-foreground text-center">AE</button>
-          <button data-tab="leaders" class="px-2 md:px-3 py-1 md:py-1.5 text-xs md:text-sm font-medium rounded-sm text-center">Sales Leaders</button>
-          <button data-tab="presales" class="px-2 md:px-3 py-1 md:py-1.5 text-xs md:text-sm font-medium rounded-sm text-center">Pre-Sales</button>
-          <button data-tab="sdr" class="px-2 md:px-3 py-1 md:py-1.5 text-xs md:text-sm font-medium rounded-sm text-center">SDR</button>
-          <button data-tab="enablement" class="px-2 md:px-3 py-1 md:py-1.5 text-xs md:text-sm font-medium rounded-sm text-center">Sales Enablement</button>
-          <button data-tab="revops" class="px-2 md:px-3 py-1 md:py-1.5 text-xs md:text-sm font-medium rounded-sm text-center">RevOps</button>
+          <button data-tab="ae" class="px-2 md:px-3 py-1 md:py-1.5 text-xs md:text-sm font-medium rounded-sm bg-accent text-accent-foreground text-center">Account Executive</button>
+          <button data-tab="leaders" class="px-2 md:px-3 py-1 md:py-1.5 text-xs md:text-sm font-medium rounded-sm text-muted-foreground hover:text-foreground text-center">Sales Leaders</button>
+          <button data-tab="presales" class="px-2 md:px-3 py-1 md:py-1.5 text-xs md:text-sm font-medium rounded-sm text-muted-foreground hover:text-foreground text-center">Pre-Sales</button>
+          <button data-tab="sdr" class="px-2 md:px-3 py-1 md:py-1.5 text-xs md:text-sm font-medium rounded-sm text-muted-foreground hover:text-foreground text-center">SDR</button>
+          <button data-tab="enablement" class="px-2 md:px-3 py-1 md:py-1.5 text-xs md:text-sm font-medium rounded-sm text-muted-foreground hover:text-foreground text-center">Sales Enablement</button>
+          <button data-tab="revops" class="px-2 md:px-3 py-1 md:py-1.5 text-xs md:text-sm font-medium rounded-sm text-muted-foreground hover:text-foreground text-center">RevOps</button>
         </div>
 
         <div class="max-w-6xl mx-auto">
@@ -515,8 +515,12 @@
         tabButtons.forEach(function (b) {
           if (b.getAttribute('data-tab') === val) {
             b.classList.add('bg-accent', 'text-accent-foreground')
+            b.classList.remove('text-muted-foreground')
+            b.classList.remove('hover:text-foreground')
           } else {
             b.classList.remove('bg-accent', 'text-accent-foreground')
+            b.classList.add('text-muted-foreground')
+            b.classList.add('hover:text-foreground')
           }
         })
         tabContents.forEach(function (c) {
