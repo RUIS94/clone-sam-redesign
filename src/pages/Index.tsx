@@ -745,6 +745,11 @@ const Index = () => {
       {/* Request Demo Section */}
       <section id="request" className="py-20 bg-secondary">
         <div className="container mx-auto px-4 max-w-4xl">
+          <div className="text-center mb-6">
+            <Badge className="mb-4 bg-accent/10 text-accent hover:bg-accent/20">
+              Demo
+            </Badge>
+          </div>
           <h2 className="text-3xl md:text-5xl font-bold text-center mb-6 text-foreground">
             Request Demo
           </h2>
