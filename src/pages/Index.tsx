@@ -87,23 +87,23 @@ const Index = () => {
           </div>
 
           <Tabs defaultValue="ae" className="max-w-6xl mx-auto">
-            <TabsList className="grid w-full grid-cols-3 md:grid-cols-6 mb-12 bg-background">
-              <TabsTrigger value="ae" className="data-[state=active]:bg-accent data-[state=active]:text-accent-foreground">
+            <TabsList className="grid w-full grid-cols-3 md:grid-cols-6 gap-2 md:gap-4 mb-12 bg-background">
+              <TabsTrigger value="ae" className="px-2 md:px-3 py-1 md:py-1.5 text-xs md:text-sm data-[state=active]:bg-accent data-[state=active]:text-accent-foreground">
                 AE
               </TabsTrigger>
-              <TabsTrigger value="leaders" className="data-[state=active]:bg-accent data-[state=active]:text-accent-foreground">
+              <TabsTrigger value="leaders" className="px-2 md:px-3 py-1 md:py-1.5 text-xs md:text-sm data-[state=active]:bg-accent data-[state=active]:text-accent-foreground">
                 Sales Leaders
               </TabsTrigger>
-              <TabsTrigger value="presales" className="data-[state=active]:bg-accent data-[state=active]:text-accent-foreground">
+              <TabsTrigger value="presales" className="px-2 md:px-3 py-1 md:py-1.5 text-xs md:text-sm data-[state=active]:bg-accent data-[state=active]:text-accent-foreground">
                 Pre-Sales
               </TabsTrigger>
-              <TabsTrigger value="sdr" className="data-[state=active]:bg-accent data-[state=active]:text-accent-foreground">
+              <TabsTrigger value="sdr" className="px-2 md:px-3 py-1 md:py-1.5 text-xs md:text-sm data-[state=active]:bg-accent data-[state=active]:text-accent-foreground">
                 SDR
               </TabsTrigger>
-              <TabsTrigger value="enablement" className="data-[state=active]:bg-accent data-[state=active]:text-accent-foreground">
+              <TabsTrigger value="enablement" className="px-2 md:px-3 py-1 md:py-1.5 text-xs md:text-sm data-[state=active]:bg-accent data-[state=active]:text-accent-foreground">
                 Sales Enablement
               </TabsTrigger>
-              <TabsTrigger value="revops" className="data-[state=active]:bg-accent data-[state=active]:text-accent-foreground">
+              <TabsTrigger value="revops" className="px-2 md:px-3 py-1 md:py-1.5 text-xs md:text-sm data-[state=active]:bg-accent data-[state=active]:text-accent-foreground">
                 RevOps
               </TabsTrigger>
             </TabsList>
@@ -562,7 +562,7 @@ const Index = () => {
             </p>
             
             {/* Billing Toggle */}
-            <div className="inline-flex items-center gap-4 bg-secondary p-1 rounded-lg">
+            <div className="inline-flex items-center gap-4 bg-secondary p-1 rounded-lg flex-wrap justify-center">
               <button
                 onClick={() => setBillingCycle("monthly")}
                 className={`px-6 py-2 rounded-md font-medium transition-colors ${
