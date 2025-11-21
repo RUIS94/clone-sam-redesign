@@ -554,9 +554,12 @@ const Index = () => {
       <section id="pricing" className="py-20 bg-background">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
-            <Badge className="mb-4 bg-accent/10 text-accent hover:bg-accent/20">
+            <Badge className="mb-10 bg-accent/10 text-accent hover:bg-accent/20">
               Pricing
             </Badge>
+            <p className="text-3xl md:text-5xl font-bold text-center mb-2 text-foreground">
+              Accelerate Your Revenue Growth 
+            </p>
             <p className="text-xl text-muted-foreground mb-8">
               Choose the plan that fits your team's needs
             </p>
