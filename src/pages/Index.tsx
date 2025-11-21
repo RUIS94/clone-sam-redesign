@@ -75,14 +75,12 @@ const Index = () => {
             35% Boost in Win Rate
           </Badge>
           <h1 className="text-4xl md:text-6xl font-bold mb-6 text-foreground leading-snug md:leading-tight">
-            A GTM <span className="text-accent">AI</span> Agent to Optimize
-            <br />
-            <span className="text-accent">Deal qualification</span>,{" "}
-            <span className="text-accent">Coaching</span> and{" "}
-            <span className="text-accent">Forecasting</span>
+            Your <span className="text-accent">Revenue Operating System</span>
+            <br /> for Smarter Selling
           </h1>
           <p className="text-xl text-muted-foreground mb-8">
-            More Revenue, More Time, More Life
+            Give every rep a real-time AI partner that sharpens deal strategy, improves forecast accuracy, 
+            <br />and gives leaders clear pipeline visibility
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button onClick={scrollToRequest} size="lg" className="bg-accent text-accent-foreground hover:bg-accent/90">
