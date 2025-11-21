@@ -46,7 +46,7 @@ const Index = () => {
               <Button onClick={scrollToRequest} variant="ghost" className="hidden md:inline-flex text-foreground">
                 Login
               </Button>
-              <Button onClick={scrollToRequest} className="bg-accent text-accent-foreground hover:bg-accent/90 ml-2">
+              <Button onClick={scrollToRequest} className="hidden md:inline-flex bg-accent text-accent-foreground hover:bg-accent/90 ml-2">
                 Request Demo
               </Button>
               <Sheet>
