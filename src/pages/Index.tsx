@@ -924,20 +924,18 @@ const Index = () => {
         <div className="container mx-auto px-6 md:px-10">
           <div className="grid md:grid-cols-4 gap-8 mb-8">
             <div>
-              <img src={logo2} alt="GTM8 logo" className="h-4 w-auto mb-4" />
-              <p className="text-sm mb-4 opacity-90">
-                8 Hadenfeld Ave<br />
-                Macquarie Park NSW 2113<br />
-                Australia
-              </p>
-              <p className="text-sm opacity-90">
-                Email: gtm@gtm8.ai <br />
-              </p>
+              <img src={logo2} alt="GTM8 logo" className="h-3 w-auto mb-7" />
+              <ul className="space-y-2 text-sm opacity-90 leading-6">
+                <li>8 Hadenfeld Ave</li>
+                <li>Macquarie Park NSW 2113</li>
+                <li>Australia</li>
+                <li>Email: gtm@gtm8.ai</li>
+              </ul>
             </div>
 
             <div>
-              <h4 className="font-semibold mb-4">What GTM8 does</h4>
-              <ul className="space-y-2 text-sm opacity-90">
+              <h4 className="font-semibold leading-6 mb-4">What GTM8 does</h4>
+              <ul className="space-y-2 text-sm opacity-90 leading-6">
                 <li><a href="#" className="hover:text-accent transition-colors">Deal Qualification</a></li>
                 <li><a href="#" className="hover:text-accent transition-colors">Sales Coaching</a></li>
                 <li><a href="#" className="hover:text-accent transition-colors">Forecasting</a></li>
