@@ -12,6 +12,10 @@ import { CheckCircle, Target, Users, Clock, Shield, TrendingUp, Zap, Eye, Puzzle
 const Index = () => {
   const [billingCycle, setBillingCycle] = useState<"monthly" | "annual">("annual");
   const [solutionsTab, setSolutionsTab] = useState("ae");
+  const scrollToRequest = () => {
+    const el = document.getElementById("request");
+    if (el) el.scrollIntoView({ behavior: "smooth" });
+  };
   return (
     <div className="min-h-screen bg-background">
       {/* Navigation */}
@@ -22,7 +26,7 @@ const Index = () => {
               <img src={logo} alt="GTM8 logo" className="h-8 w-auto" />
             </div>
             <div className="hidden md:flex items-center gap-8">
-              <a href="#product" className="text-sm font-medium text-foreground hover:text-accent transition-colors">
+              <a href="#product" onClick={(e)=>{e.preventDefault();scrollToRequest();}} className="text-sm font-medium text-foreground hover:text-accent transition-colors">
                 Product
               </a>
               <a href="#solutions" className="text-sm font-medium text-foreground hover:text-accent transition-colors">
@@ -31,18 +35,18 @@ const Index = () => {
               <a href="#pricing" className="text-sm font-medium text-foreground hover:text-accent transition-colors">
                 Pricing
               </a>
-              <a href="#resources" className="text-sm font-medium text-foreground hover:text-accent transition-colors">
+              <a href="#resources" onClick={(e)=>{e.preventDefault();scrollToRequest();}} className="text-sm font-medium text-foreground hover:text-accent transition-colors">
                 Resources
               </a>
-              <a href="#download" className="text-sm font-medium text-foreground hover:text-accent transition-colors">
+              <a href="#download" onClick={(e)=>{e.preventDefault();scrollToRequest();}} className="text-sm font-medium text-foreground hover:text-accent transition-colors">
                 Download
               </a>
             </div>
             <div className="flex items-center gap-4 mr-2 md:mr-8">
-              <Button variant="ghost" className="text-foreground">
+              <Button onClick={scrollToRequest} variant="ghost" className="text-foreground">
                 Login
               </Button>
-              <Button className="bg-accent text-accent-foreground hover:bg-accent/90">
+              <Button onClick={scrollToRequest} className="bg-accent text-accent-foreground hover:bg-accent/90">
                 Request Demo
               </Button>
               <Sheet>
@@ -51,11 +55,11 @@ const Index = () => {
                 </SheetTrigger>
                 <SheetContent side="right" className="w-64">
                   <div className="flex flex-col gap-4 mt-6">
-                    <a href="#product" className="text-sm font-medium text-foreground hover:text-accent transition-colors">Product</a>
+                    <a href="#product" onClick={(e)=>{e.preventDefault();scrollToRequest();}} className="text-sm font-medium text-foreground hover:text-accent transition-colors">Product</a>
                     <a href="#solutions" className="text-sm font-medium text-foreground hover:text-accent transition-colors">Solutions</a>
                     <a href="#pricing" className="text-sm font-medium text-foreground hover:text-accent transition-colors">Pricing</a>
-                    <a href="#resources" className="text-sm font-medium text-foreground hover:text-accent transition-colors">Resources</a>
-                    <a href="#download" className="text-sm font-medium text-foreground hover:text-accent transition-colors">Download</a>
+                    <a href="#resources" onClick={(e)=>{e.preventDefault();scrollToRequest();}} className="text-sm font-medium text-foreground hover:text-accent transition-colors">Resources</a>
+                    <a href="#download" onClick={(e)=>{e.preventDefault();scrollToRequest();}} className="text-sm font-medium text-foreground hover:text-accent transition-colors">Download</a>
                   </div>
                 </SheetContent>
               </Sheet>
@@ -81,10 +85,10 @@ const Index = () => {
             More Revenue, More Time, More Life
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button size="lg" className="bg-accent text-accent-foreground hover:bg-accent/90">
+            <Button onClick={scrollToRequest} size="lg" className="bg-accent text-accent-foreground hover:bg-accent/90">
               Learn More
             </Button>
-            <Button size="lg" variant="outline" className="border-border hover:!bg-secondary hover:!text-muted-foreground">
+            <Button onClick={scrollToRequest} size="lg" variant="outline" className="border-border hover:!bg-secondary hover:!text-muted-foreground">
               Start a free trial
             </Button>
           </div>
@@ -486,10 +490,10 @@ const Index = () => {
                   </div>
 
                   <div className="flex gap-4 mt-6 justify-center">
-                    <Button className="bg-accent text-accent-foreground hover:bg-accent/90">
+                    <Button onClick={scrollToRequest} className="bg-accent text-accent-foreground hover:bg-accent/90">
                       Learn More
                     </Button>
-                    <Button variant="outline" className="border-border">
+                    <Button onClick={scrollToRequest} variant="outline" className="border-border">
                       Request a Demo
                     </Button>
                   </div>
@@ -638,7 +642,7 @@ const Index = () => {
                   </span>
                   <span className="text-muted-foreground">/user/month</span>
                 </div>
-                <Button className="w-full bg-accent text-accent-foreground hover:bg-accent/90 mb-6">
+                <Button onClick={scrollToRequest} className="w-full bg-accent text-accent-foreground hover:bg-accent/90 mb-6">
                   Get Started
                 </Button>
                 <div className="space-y-3">
@@ -686,7 +690,7 @@ const Index = () => {
                   </span>
                   <span className="text-muted-foreground">/user/month</span>
                 </div>
-                <Button className="w-full bg-accent text-accent-foreground hover:bg-accent/90 mb-6">
+                <Button onClick={scrollToRequest} className="w-full bg-accent text-accent-foreground hover:bg-accent/90 mb-6">
                   Get Started
                 </Button>
                 <div className="space-y-3">
@@ -733,7 +737,7 @@ const Index = () => {
                 <div className="mb-6">
                   <span className="text-4xl font-bold text-foreground">Custom</span>
                 </div>
-                <Button className="w-full bg-accent text-accent-foreground hover:bg-accent/90 mb-6">
+                <Button onClick={scrollToRequest} className="w-full bg-accent text-accent-foreground hover:bg-accent/90 mb-6">
                   Contact Sales
                 </Button>
                 <div className="space-y-3">

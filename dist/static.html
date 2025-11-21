@@ -529,6 +529,20 @@
       }
       var solutionsSelect = document.getElementById('solutions-select')
       if (solutionsSelect) solutionsSelect.addEventListener('change', function(){ activateTab(this.value) })
+      function scrollToRequest() {
+        var el = document.getElementById('request')
+        if (el) el.scrollIntoView({ behavior: 'smooth' })
+      }
+      Array.prototype.slice.call(document.querySelectorAll('a[href="#product"], a[href="#resources"], a[href="#download"]')).forEach(function(el){
+        el.addEventListener('click', function(e){ e.preventDefault(); scrollToRequest() })
+      })
+      var labels = ['Learn More','Start a free trial','Request a Demo','Get Started','Contact Sales','Login','Request Demo']
+      Array.prototype.slice.call(document.querySelectorAll('button, a')).forEach(function(el){
+        var t = (el.textContent || '').trim()
+        if (labels.indexOf(t) > -1) {
+          el.addEventListener('click', function(e){ e.preventDefault(); scrollToRequest() })
+        }
+      })
       tabButtons.forEach(function (b) {
         b.addEventListener('click', function () {
           activateTab(b.getAttribute('data-tab'))
