@@ -3,19 +3,22 @@ import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { Card, CardContent } from "@/components/ui/card";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
+import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
+import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 import logo from "@/components/logo.png";
 import logo2 from "@/components/logo2.png";
-import { CheckCircle, Target, Users, Clock, Shield, TrendingUp, Zap, Eye, Puzzle, Heart, ClockIcon, Monitor, Check, AlertTriangle } from "lucide-react";
+import { CheckCircle, Target, Users, Clock, Shield, TrendingUp, Zap, Eye, Puzzle, Heart, ClockIcon, Monitor, Check, AlertTriangle, Menu } from "lucide-react";
 
 const Index = () => {
   const [billingCycle, setBillingCycle] = useState<"monthly" | "annual">("annual");
+  const [solutionsTab, setSolutionsTab] = useState("ae");
   return (
     <div className="min-h-screen bg-background">
       {/* Navigation */}
       <nav className="sticky top-0 z-50 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
-        <div className="container mx-auto px-4 py-4">
+        <div className="container mx-auto px-2 md:px-4 py-4">
           <div className="flex items-center justify-between">
-            <div className="flex items-center ml-8">
+            <div className="flex items-center ml-0 md:ml-8">
               <img src={logo} alt="GTM8 logo" className="h-8 w-auto" />
             </div>
             <div className="hidden md:flex items-center gap-8">
@@ -35,13 +38,27 @@ const Index = () => {
                 Download
               </a>
             </div>
-            <div className="flex items-center gap-4 mr-8">
+            <div className="flex items-center gap-4 mr-2 md:mr-8">
               <Button variant="ghost" className="text-foreground">
                 Login
               </Button>
               <Button className="bg-accent text-accent-foreground hover:bg-accent/90">
                 Request Demo
               </Button>
+              <Sheet>
+                <SheetTrigger className="md:hidden inline-flex items-center justify-center h-10 w-10 rounded-md border border-input bg-background hover:bg-secondary">
+                  <Menu className="w-5 h-5" />
+                </SheetTrigger>
+                <SheetContent side="right" className="w-64">
+                  <div className="flex flex-col gap-4 mt-6">
+                    <a href="#product" className="text-sm font-medium text-foreground hover:text-accent transition-colors">Product</a>
+                    <a href="#solutions" className="text-sm font-medium text-foreground hover:text-accent transition-colors">Solutions</a>
+                    <a href="#pricing" className="text-sm font-medium text-foreground hover:text-accent transition-colors">Pricing</a>
+                    <a href="#resources" className="text-sm font-medium text-foreground hover:text-accent transition-colors">Resources</a>
+                    <a href="#download" className="text-sm font-medium text-foreground hover:text-accent transition-colors">Download</a>
+                  </div>
+                </SheetContent>
+              </Sheet>
             </div>
           </div>
         </div>
@@ -86,8 +103,23 @@ const Index = () => {
             </h2>
           </div>
 
-          <Tabs defaultValue="ae" className="max-w-6xl mx-auto">
-            <TabsList className="grid w-full grid-cols-3 md:grid-cols-6 gap-2 md:gap-4 mb-12 bg-background">
+          <Tabs value={solutionsTab} onValueChange={setSolutionsTab} className="max-w-6xl mx-auto">
+            <div className="md:hidden mb-6">
+              <Select value={solutionsTab} onValueChange={setSolutionsTab}>
+                <SelectTrigger className="w-full">
+                  <SelectValue placeholder="Choose role" />
+                </SelectTrigger>
+                <SelectContent>
+                  <SelectItem value="ae">AE</SelectItem>
+                  <SelectItem value="leaders">Sales Leaders</SelectItem>
+                  <SelectItem value="presales">Pre-Sales</SelectItem>
+                  <SelectItem value="sdr">SDR</SelectItem>
+                  <SelectItem value="enablement">Sales Enablement</SelectItem>
+                  <SelectItem value="revops">RevOps</SelectItem>
+                </SelectContent>
+              </Select>
+            </div>
+            <TabsList className="hidden md:grid w-full grid-cols-3 md:grid-cols-6 gap-2 md:gap-4 mb-12 bg-background">
               <TabsTrigger value="ae" className="px-2 md:px-3 py-1 md:py-1.5 text-xs md:text-sm data-[state=active]:bg-accent data-[state=active]:text-accent-foreground">
                 AE
               </TabsTrigger>
@@ -939,7 +971,7 @@ const Index = () => {
             </div>
           </div>
 
-          <div className="pt-6 flex items-center justify-between text-xs opacity-75">
+          <div className="pt-6 flex flex-col md:flex-row md:items-center justify-between text-xs opacity-75 gap-3">
             <p>© 2025 GTM8.ai. All rights reserved.</p>
             <div className="flex items-center gap-3">
               <a href="#" className="hover:text-accent transition-colors">Security</a>
