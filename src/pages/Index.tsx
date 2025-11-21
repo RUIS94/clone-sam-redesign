@@ -924,7 +924,7 @@ const Index = () => {
         <div className="container mx-auto px-6 md:px-10">
           <div className="grid md:grid-cols-4 gap-8 mb-8">
             <div>
-              <img src={logo2} alt="GTM8 logo" className="h-3 w-auto mt-1 mb-7" />
+              <img src={logo2} alt="GTM8 logo" className="h-3 w-auto mt-1.5 mb-6" />
               <ul className="space-y-2 text-sm opacity-90 leading-6">
                 <li>8 Hadenfeld Ave</li>
                 <li>Macquarie Park NSW 2113</li>
