@@ -4,6 +4,7 @@ import { Badge } from "@/components/ui/badge";
 import { Card, CardContent } from "@/components/ui/card";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import logo from "@/components/logo.png";
+import logo2 from "@/components/logo2.png";
 import { CheckCircle, Target, Users, Clock, Shield, TrendingUp, Zap, Eye, Puzzle, Heart, ClockIcon, Monitor, Check, AlertTriangle } from "lucide-react";
 
 const Index = () => {
@@ -116,7 +117,7 @@ const Index = () => {
                         <div className="flex gap-4">
                           <CheckCircle className="w-8 h-8 text-accent flex-shrink-0" />
                           <div>
-                            <h4 className="font-semibold mb-2 text-foreground">Before meeting</h4>
+                            <h4 className="font-semibold mb-2 text-foreground text-gray-400">Before meeting</h4>
                             <h5 className="font-bold mb-2 text-foreground">Be more prepared for client meetings in less time</h5>
                             <p className="text-muted-foreground">
                               Structure meetings around customer pain points and thought-provoking questions for maximum impact.
@@ -131,7 +132,7 @@ const Index = () => {
                         <div className="flex gap-4">
                           <Shield className="w-8 h-8 text-accent flex-shrink-0" />
                           <div>
-                            <h4 className="font-semibold mb-2 text-foreground">During meeting</h4>
+                            <h4 className="font-semibold mb-2 text-foreground text-gray-400">During meeting</h4>
                             <h5 className="font-bold mb-2 text-foreground">Amplify listening and question skills</h5>
                             <p className="text-muted-foreground">
                               Build credibility, foster deeper connections, and outshine competitors.
@@ -146,7 +147,7 @@ const Index = () => {
                         <div className="flex gap-4">
                           <Target className="w-8 h-8 text-accent flex-shrink-0" />
                           <div>
-                            <h4 className="font-semibold mb-2 text-foreground">After meeting</h4>
+                            <h4 className="font-semibold mb-2 text-foreground text-gray-400">After meeting</h4>
                             <h5 className="font-bold mb-2 text-foreground">Know your next best action</h5>
                             <p className="text-muted-foreground">
                               Stay laser-focused on high-priority tasks that drive sales forward.
@@ -509,40 +510,40 @@ const Index = () => {
           <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
             <Card className="border-border">
               <CardContent className="p-10">
-                <Users className="w-8 h-8 text-accent mb-4" />
-                <h3 className="text-xl font-bold mb-4 text-foreground">360° Collaboration</h3>
-                <p className="text-muted-foreground mb-4">
-                  Enterprise sales qualification is a team effort.
-                </p>
-                <p className="text-muted-foreground">
-                  GTM8 provides a real-time qualification playbook for every customer interaction, giving your team deeper insights. With multi-source assessments, you enhance forecast accuracy and drive better outcomes.
-                </p>
+                <div className="flex items-start gap-4">
+                  <Users className="w-8 h-8 text-accent flex-shrink-0" />
+                  <div>
+                    <h3 className="text-lg font-bold mb-2 text-foreground">360° Collaboration</h3>
+                    <p className="text-muted-foreground mb-4">Enterprise sales qualification is a team effort.</p>
+                    <p className="text-muted-foreground">GTM8 provides a real-time qualification playbook for every customer interaction, giving your team deeper insights. With multi-source assessments, you enhance forecast accuracy and drive better outcomes.</p>
+                  </div>
+                </div>
               </CardContent>
             </Card>
 
             <Card className="border-border">
               <CardContent className="p-10">
-                <Target className="w-8 h-8 text-accent mb-4" />
-                <h3 className="text-xl font-bold mb-4 text-foreground">Amplified Qualification</h3>
-                <p className="text-muted-foreground mb-4">
-                  Missed questions lead to missed forecasts.
-                </p>
-                <p className="text-muted-foreground">
-                  GTM8 sharpens real-time questioning and listening skills, ensuring sales teams capture and validate critical customer insights, boosting forecast accuracy and account strategies.
-                </p>
+                <div className="flex items-start gap-4">
+                  <Target className="w-8 h-8 text-accent flex-shrink-0" />
+                  <div>
+                    <h3 className="text-lg font-bold mb-2 text-foreground">Amplified Qualification</h3>
+                    <p className="text-muted-foreground mb-4">Missed questions lead to missed forecasts.</p>
+                    <p className="text-muted-foreground">GTM8 sharpens real-time questioning and listening skills, ensuring sales teams capture and validate critical customer insights, boosting forecast accuracy and account strategies.</p>
+                  </div>
+                </div>
               </CardContent>
             </Card>
 
             <Card className="border-border">
               <CardContent className="p-10">
-                <AlertTriangle className="w-8 h-8 text-accent mb-4" />
-                <h3 className="text-xl font-bold mb-4 text-foreground">Exception Alert</h3>
-                <p className="text-muted-foreground mb-4">
-                  Keeping up with shifting client priorities is tougher than ever, impacting forecast accuracy.
-                </p>
-                <p className="text-muted-foreground">
-                  GTM8 detects deal risks in real time and suggests follow-up actions to keep opportunities on track.
-                </p>
+                <div className="flex items-start gap-4">
+                  <AlertTriangle className="w-8 h-8 text-accent flex-shrink-0" />
+                  <div>
+                    <h3 className="text-lg font-bold mb-2 text-foreground">Exception Alert</h3>
+                    <p className="text-muted-foreground mb-4">Keeping up with shifting client priorities is tougher than ever, impacting forecast accuracy.</p>
+                    <p className="text-muted-foreground">GTM8 detects deal risks in real time and suggests follow-up actions to keep opportunities on track.</p>
+                  </div>
+                </div>
               </CardContent>
             </Card>
           </div>
@@ -875,11 +876,11 @@ const Index = () => {
       </section>
 
       {/* Footer */}
-      <footer className="bg-primary text-primary-foreground pt-14 pb-8">
+      <footer className="bg-[#3F4243] text-primary-foreground pt-14 pb-8">
         <div className="container mx-auto px-6 md:px-10">
           <div className="grid md:grid-cols-4 gap-8 mb-8">
             <div>
-              <h3 className="text-xl font-bold mb-4">GTM8.ai</h3>
+              <img src={logo2} alt="GTM8 logo" className="h-4 w-auto mb-4" />
               <p className="text-sm mb-4 opacity-90">
                 8 Hadenfeld Ave<br />
                 Macquarie Park NSW 2113<br />

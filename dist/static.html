@@ -1,0 +1,538 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>GTM8 — Static</title>
+    <link rel="stylesheet" href="https://raw.githubusercontent.com/RUIS94/clone-sam-redesign/main/dist/assets/index-VP4YP6XU.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        darkMode: 'class',
+        theme: {
+          extend: {
+            colors: {
+              border: 'hsl(var(--border))',
+              input: 'hsl(var(--input))',
+              ring: 'hsl(var(--ring))',
+              background: 'hsl(var(--background))',
+              foreground: 'hsl(var(--foreground))',
+              primary: { DEFAULT: 'hsl(var(--primary))', foreground: 'hsl(var(--primary-foreground))' },
+              secondary: { DEFAULT: 'hsl(var(--secondary))', foreground: 'hsl(var(--secondary-foreground))' },
+              destructive: { DEFAULT: 'hsl(var(--destructive))', foreground: 'hsl(var(--destructive-foreground))' },
+              muted: { DEFAULT: 'hsl(var(--muted))', foreground: 'hsl(var(--muted-foreground))' },
+              accent: { DEFAULT: 'hsl(var(--accent))', foreground: 'hsl(var(--accent-foreground))' },
+              popover: { DEFAULT: 'hsl(var(--popover))', foreground: 'hsl(var(--popover-foreground))' },
+              card: { DEFAULT: 'hsl(var(--card))', foreground: 'hsl(var(--card-foreground))' },
+            },
+          },
+        },
+      }
+    </script>
+    <style>
+      :root {
+        --background: 0 0% 100%;
+        --foreground: 0 0% 20%;
+        --card: 0 0% 100%;
+        --card-foreground: 0 0% 20%;
+        --popover: 0 0% 100%;
+        --popover-foreground: 0 0% 20%;
+        --primary: 0 0% 25%;
+        --primary-foreground: 0 0% 100%;
+        --secondary: 0 0% 96%;
+        --secondary-foreground: 0 0% 20%;
+        --muted: 0 0% 96%;
+        --muted-foreground: 0 0% 45%;
+        --accent: 28 100% 55%;
+        --accent-foreground: 0 0% 100%;
+        --destructive: 0 84.2% 60.2%;
+        --destructive-foreground: 0 0% 100%;
+        --border: 0 0% 90%;
+        --input: 0 0% 90%;
+        --ring: 28 100% 55%;
+        --radius: 0.5rem;
+        --sidebar-background: 0 0% 98%;
+        --sidebar-foreground: 240 5.3% 26.1%;
+        --sidebar-primary: 240 5.9% 10%;
+        --sidebar-primary-foreground: 0 0% 98%;
+        --sidebar-accent: 240 4.8% 95.9%;
+        --sidebar-accent-foreground: 240 5.9% 10%;
+        --sidebar-border: 220 13% 91%;
+        --sidebar-ring: 217.2 91.2% 59.8%;
+      }
+      * { border-color: hsl(var(--border)); }
+      body { background-color: hsl(var(--background)); color: hsl(var(--foreground)); }
+      .rounded-lg { border-radius: var(--radius) !important; }
+      .rounded-md { border-radius: calc(var(--radius) - 2px) !important; }
+      .rounded-sm { border-radius: calc(var(--radius) - 4px) !important; }
+    </style>
+  </head>
+  <body class="bg-background text-foreground min-h-screen">
+    <nav class="sticky top-0 z-50 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
+      <div class="container mx-auto px-4 py-4">
+        <div class="flex items-center justify-between">
+          <div class="flex items-center ml-8">
+            <img src="https://raw.githubusercontent.com/RUIS94/clone-sam-redesign/main/dist/assets/logo-BLlqFwy7.png" alt="GTM8 logo" class="h-8 w-auto" loading="eager" onerror="this.onerror=null;this.src='https://placehold.co/120x32/png?text=GTM8+Logo';" />
+          </div>
+          <div class="hidden md:flex items-center gap-8">
+            <a href="#product" class="text-sm font-medium text-foreground hover:text-accent transition-colors">Product</a>
+            <a href="#solutions" class="text-sm font-medium text-foreground hover:text-accent transition-colors">Solutions</a>
+            <a href="#pricing" class="text-sm font-medium text-foreground hover:text-accent transition-colors">Pricing</a>
+            <a href="#resources" class="text-sm font-medium text-foreground hover:text-accent transition-colors">Resources</a>
+            <a href="#download" class="text-sm font-medium text-foreground hover:text-accent transition-colors">Download</a>
+          </div>
+          <div class="flex items-center gap-4 mr-8">
+            <button class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 hover:bg-accent hover:text-accent-foreground h-10 px-4 py-2">Login</button>
+            <button class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 h-11 rounded-md px-8 bg-accent text-accent-foreground hover:bg-accent/90">Request Demo</button>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <section class="container mx-auto px-4 pt-10 md:pt-16 pb-20 md:pb-32">
+      <div class="text-center max-w-5xl mx-auto">
+        <div class="inline-flex items-center rounded-full px-2.5 py-0.5 text-xs font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 mb-6 bg-accent/10 text-accent">35% Boost in Win Rate</div>
+        <h1 class="text-4xl md:text-6xl font-bold mb-6 text-foreground leading-snug md:leading-tight">
+          A GTM <span class="text-accent">AI</span> Agent to Optimize 
+          <span class="text-accent">Deal qualification</span>, 
+          <span class="text-accent">Coaching</span> and 
+          <span class="text-accent">Forecasting</span>
+        </h1>
+        <p class="text-xl text-muted-foreground mb-8">More Revenue, More Time, More Life</p>
+        <div class="flex flex-col sm:flex-row gap-4 justify-center">
+          <button class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 h-11 rounded-md px-8 bg-accent text-accent-foreground hover:bg-accent/90">Learn More</button>
+          <button class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border border-input bg-background hover:bg-secondary hover:text-muted-foreground h-11 rounded-md px-8">Start a free trial</button>
+        </div>
+      </div>
+    </section>
+
+    <section id="solutions" class="bg-secondary py-20">
+      <div class="container mx-auto px-4">
+        <div class="text-center mb-12">
+          <div class="inline-flex items-center rounded-full px-2.5 py-0.5 text-xs font-semibold transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 mb-10 bg-accent/10 text-accent border-accent/20 hover:bg-accent/20">Solutions</div>
+          <h2 class="text-3xl md:text-5xl font-bold text-foreground">How GTM8 Can <span class="text-accent">Work For You</span></h2>
+        </div>
+
+        <div id="solutions-tabs" class="grid w-full grid-cols-3 md:grid-cols-6 mb-12 bg-background">
+          <button data-tab="ae" class="px-3 py-1.5 text-sm font-medium rounded-sm bg-accent text-accent-foreground text-center">AE</button>
+          <button data-tab="leaders" class="px-3 py-1.5 text-sm font-medium rounded-sm text-center">Sales Leaders</button>
+          <button data-tab="presales" class="px-3 py-1.5 text-sm font-medium rounded-sm text-center">Pre-Sales</button>
+          <button data-tab="sdr" class="px-3 py-1.5 text-sm font-medium rounded-sm text-center">SDR</button>
+          <button data-tab="enablement" class="px-3 py-1.5 text-sm font-medium rounded-sm text-center">Sales Enablement</button>
+          <button data-tab="revops" class="px-3 py-1.5 text-sm font-medium rounded-sm text-center">RevOps</button>
+        </div>
+
+        <div class="max-w-6xl mx-auto">
+          <div data-tab-content="ae" class="space-y-8">
+            <div>
+              <div class="grid md:grid-cols-3 gap-6">
+                <div class="rounded-lg border bg-card text-card-foreground shadow-sm">
+                  <div class="p-6 pt-6">
+                    <div class="flex gap-4">
+                      <i data-lucide="check-circle" class="w-8 h-8 text-accent flex-shrink-0"></i>
+                      <div>
+                        <h4 class="font-semibold mb-2 text-foreground">Before meeting</h4>
+                        <h5 class="font-bold mb-2 text-foreground">Be more prepared for client meetings in less time</h5>
+                        <p class="text-muted-foreground">Structure meetings around customer pain points and thought-provoking questions for maximum impact.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="rounded-lg border bg-card text-card-foreground shadow-sm">
+                  <div class="p-6 pt-6">
+                    <div class="flex gap-4">
+                      <i data-lucide="shield" class="w-8 h-8 text-accent flex-shrink-0"></i>
+                      <div>
+                        <h4 class="font-semibold mb-2 text-foreground">During meeting</h4>
+                        <h5 class="font-bold mb-2 text-foreground">Amplify listening and question skills</h5>
+                        <p class="text-muted-foreground">Build credibility, foster deeper connections, and outshine competitors.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="rounded-lg border bg-card text-card-foreground shadow-sm">
+                  <div class="p-6 pt-6">
+                    <div class="flex gap-4">
+                      <i data-lucide="target" class="w-8 h-8 text-accent flex-shrink-0"></i>
+                      <div>
+                        <h4 class="font-semibold mb-2 text-foreground">After meeting</h4>
+                        <h5 class="font-bold mb-2 text-foreground">Know your next best action</h5>
+                        <p class="text-muted-foreground">Stay laser-focused on high-priority tasks that drive sales forward.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                </div>
+              </div>
+              <div class="flex gap-4 mt-6 justify-center">
+                <button class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 h-11 rounded-md px-8 bg-accent text-accent-foreground hover:bg-accent/90">Learn More</button>
+              <button class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border border-input bg-background hover:bg-secondary hover:text-muted-foreground h-11 rounded-md px-8">Request a Demo</button>
+              </div>
+            </div>
+          </div>
+
+          <div data-tab-content="leaders" class="space-y-8 hidden">
+            <div>
+              <div class="grid md:grid-cols-3 gap-6">
+                <div class="rounded-lg border bg-card text-card-foreground shadow-sm"><div class="p-6 pt-6"><div class="flex gap-4"><i data-lucide="eye" class="w-8 h-8 text-accent flex-shrink-0"></i><div><h5 class="font-bold mb-2 text-foreground">Unlock Real-Time Deal Visibility</h5><p class="text-muted-foreground">Gain 360° insights into deal qualification to save at-risk deals before it's too late.</p></div></div></div></div>
+                <div class="rounded-lg border bg-card text-card-foreground shadow-sm"><div class="p-6 pt-6"><div class="flex gap-4"><i data-lucide="target" class="w-8 h-8 text-accent flex-shrink-0"></i><div><h5 class="font-bold mb-2 text-foreground">Scale Coaching to Meet Every Rep's Needs</h5><p class="text-muted-foreground">Empower teams with real-time insights for targeted coaching that drives revenue growth.</p></div></div></div></div>
+                <div class="rounded-lg border bg-card text-card-foreground shadow-sm"><div class="p-6 pt-6"><div class="flex gap-4"><i data-lucide="users" class="w-8 h-8 text-accent flex-shrink-0"></i><div><h5 class="font-bold mb-2 text-foreground">Master Accurate Forecasting</h5><p class="text-muted-foreground">Balancing optimism with data-driven precision for reliable revenue predictions.</p></div></div></div></div>
+              </div>
+              <div class="flex gap-4 mt-6 justify-center"><button class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 h-11 rounded-md px-8 bg-accent text-accent-foreground hover:bg-accent/90">Learn More</button><button class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border border-input bg-background hover:bg-secondary hover:text-muted-foreground h-11 rounded-md px-8">Request a Demo</button></div>
+            </div>
+          </div>
+
+          <div data-tab-content="presales" class="space-y-8 hidden">
+            <div>
+              <div class="grid md:grid-cols-3 gap-6">
+                <div class="rounded-lg border bg-card text-card-foreground shadow-sm"><div class="p-6 pt-6"><div class="flex gap-4"><i data-lucide="clock" class="w-8 h-8 text-accent flex-shrink-0"></i><div><h5 class="font-bold mb-2 text-foreground">Prepare for Meetings Faster</h5><p class="text-muted-foreground">Streamline research and prep to be more efficient in every client interaction.</p></div></div></div></div>
+                <div class="rounded-lg border bg-card text-card-foreground shadow-sm"><div class="p-6 pt-6"><div class="flex gap-4"><i data-lucide="monitor" class="w-8 h-8 text-accent flex-shrink-0"></i><div><h5 class="font-bold mb-2 text-foreground">Gain Real-Time Visibility into Client Interactions</h5><p class="text-muted-foreground">Access past meeting notes to understand customer needs and assess solutions effectively.</p></div></div></div></div>
+                <div class="rounded-lg border bg-card text-card-foreground shadow-sm"><div class="p-6 pt-6"><div class="flex gap-4"><i data-lucide="puzzle" class="w-8 h-8 text-accent flex-shrink-0"></i><div><h5 class="font-bold mb-2 text-foreground">Contribute to Deal Qualification</h5><p class="text-muted-foreground">Collaborate seamlessly with the sales team on deal assessments, track action items, and stay updated with real-time notifications.</p></div></div></div></div>
+              </div>
+              <div class="flex gap-4 mt-6 justify-center"><button class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 h-11 rounded-md px-8 bg-accent text-accent-foreground hover:bg-accent/90">Learn More</button><button class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border border-input bg-background hover:bg-secondary hover:text-muted-foreground h-11 rounded-md px-8">Request a Demo</button></div>
+            </div>
+          </div>
+
+          <div data-tab-content="sdr" class="space-y-8 hidden">
+            <div>
+              <div class="grid md:grid-cols-3 gap-6">
+                <div class="rounded-lg border bg-card text-card-foreground shadow-sm"><div class="p-6 pt-6"><div class="flex gap-4"><i data-lucide="clock" class="w-8 h-8 text-accent flex-shrink-0"></i><div><h5 class="font-bold mb-2 text-foreground">Secure more qualified leads faster</h5><p class="text-muted-foreground">Engage prospects with clear, personalized messaging at every stage of the journey.</p></div></div></div></div>
+                <div class="rounded-lg border bg-card text-card-foreground shadow-sm"><div class="p-6 pt-6"><div class="flex gap-4"><i data-lucide="zap" class="w-8 h-8 text-accent flex-shrink-0"></i><div><h5 class="font-bold mb-2 text-foreground">Track and Optimize Outreach Performance</h5><p class="text-muted-foreground">Measure and refine your approach based on real-time data to improve results.</p></div></div></div></div>
+                <div class="rounded-lg border bg-card text-card-foreground shadow-sm"><div class="p-6 pt-6"><div class="flex gap-4"><i data-lucide="heart" class="w-8 h-8 text-accent flex-shrink-0"></i><div><h5 class="font-bold mb-2 text-foreground">Align with AEs on Lead Quality</h5><p class="text-muted-foreground">Eliminate friction by ensuring clarity and agreement on sales-qualified leads.</p></div></div></div></div>
+              </div>
+              <div class="flex gap-4 mt-6 justify-center"><button class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 h-11 rounded-md px-8 bg-accent text-accent-foreground hover:bg-accent/90">Learn More</button><button class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border border-input bg-background hover:bg-secondary hover:text-muted-foreground h-11 rounded-md px-8">Request a Demo</button></div>
+            </div>
+          </div>
+
+          <div data-tab-content="enablement" class="space-y-8 hidden">
+            <div>
+              <div class="grid md:grid-cols-3 gap-6">
+                <div class="rounded-lg border bg-card text-card-foreground shadow-sm"><div class="p-6 pt-6"><div class="flex gap-4"><i data-lucide="trending-up" class="w-8 h-8 text-accent flex-shrink-0"></i><div><h5 class="font-bold mb-2 text-foreground">Accelerate Onboarding</h5><p class="text-muted-foreground">Get new reps up to speed faster with structured learning paths and real-time coaching.</p></div></div></div></div>
+                <div class="rounded-lg border bg-card text-card-foreground shadow-sm"><div class="p-6 pt-6"><div class="flex gap-4"><i data-lucide="target" class="w-8 h-8 text-accent flex-shrink-0"></i><div><h5 class="font-bold mb-2 text-foreground">Track Training Effectiveness</h5><p class="text-muted-foreground">Measure the impact of enablement programs on sales performance and revenue.</p></div></div></div></div>
+                <div class="rounded-lg border bg-card text-card-foreground shadow-sm"><div class="p-6 pt-6"><div class="flex gap-4"><i data-lucide="users" class="w-8 h-8 text-accent flex-shrink-0"></i><div><h5 class="font-bold mb-2 text-foreground">Scale Best Practices</h5><p class="text-muted-foreground">Capture and share winning strategies across your entire sales organization.</p></div></div></div></div>
+              </div>
+              <div class="flex gap-4 mt-6 justify-center"><button class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 h-11 rounded-md px-8 bg-accent text-accent-foreground hover:bg-accent/90">Learn More</button><button class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border border-input bg-background hover:bg-secondary hover:text-muted-foreground h-11 rounded-md px-8">Request a Demo</button></div>
+            </div>
+          </div>
+
+          <div data-tab-content="revops" class="space-y-8 hidden">
+            <div>
+              <div class="grid md:grid-cols-3 gap-6">
+                <div class="rounded-lg border bg-card text-card-foreground shadow-sm"><div class="p-6 pt-6"><div class="flex gap-4"><i data-lucide="trending-up" class="w-8 h-8 text-accent flex-shrink-0"></i><div><h5 class="font-bold mb-2 text-foreground">Optimize Revenue Operations</h5><p class="text-muted-foreground">Streamline processes and eliminate bottlenecks to accelerate revenue growth.</p></div></div></div></div>
+                <div class="rounded-lg border bg-card text-card-foreground shadow-sm"><div class="p-6 pt-6"><div class="flex gap-4"><i data-lucide="eye" class="w-8 h-8 text-accent flex-shrink-0"></i><div><h5 class="font-bold mb-2 text-foreground">Gain Pipeline Visibility</h5><p class="text-muted-foreground">Get complete visibility into your revenue pipeline with real-time analytics.</p></div></div></div></div>
+                <div class="rounded-lg border bg-card text-card-foreground shadow-sm"><div class="p-6 pt-6"><div class="flex gap-4"><i data-lucide="shield" class="w-8 h-8 text-accent flex-shrink-0"></i><div><h5 class="font-bold mb-2 text-foreground">Ensure Data Accuracy</h5><p class="text-muted-foreground">Maintain clean, reliable data across all your revenue systems.</p></div></div></div></div>
+              </div>
+              <div class="flex gap-4 mt-6 justify-center"><button class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 h-11 rounded-md px-8 bg-accent text-accent-foreground hover:bg-accent/90">Learn More</button><button class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border border-input bg-background hover:bg-secondary hover:text-muted-foreground h-11 rounded-md px-8">Request a Demo</button></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="py-16 bg-background">
+      <div class="container mx-auto px-4">
+        <h2 class="text-3xl md:text-4xl font-bold text-center mb-12 text-foreground">Join 2,000+ target-hitting enterprise salespeople</h2>
+        <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-7 items-center justify-items-center opacity-60">
+          <div class="w-[5.6rem] h-[2.8rem] rounded flex items-center justify-center"><img src="https://sam.coach/wp-content/uploads/2023/03/Image.png" alt="Logo 1" class="max-h-[2.1rem] w-auto object-contain" loading="lazy" /></div>
+          <div class="w-[5.6rem] h-[2.8rem] rounded flex items-center justify-center"><img src="https://sam.coach/wp-content/uploads/2023/03/Image1.png" alt="Logo 2" class="max-h-[2.1rem] w-auto object-contain" loading="lazy" /></div>
+          <div class="w-[5.6rem] h-[2.8rem] rounded flex items-center justify-center"><img src="https://sam.coach/wp-content/uploads/2023/03/Image2.png" alt="Logo 3" class="max-h-[2.1rem] w-auto object-contain" loading="lazy" /></div>
+          <div class="w-[5.6rem] h-[2.8rem] rounded flex items-center justify-center"><img src="https://sam.coach/wp-content/uploads/2023/03/Image3.png" alt="Logo 4" class="max-h-[2.1rem] w-auto object-contain" loading="lazy" /></div>
+          <div class="w-[5.6rem] h-[2.8rem] rounded flex items-center justify-center"><img src="https://sam.coach/wp-content/uploads/2023/03/Image4.png" alt="Logo 5" class="max-h-[2.1rem] w-auto object-contain" loading="lazy" /></div>
+          <div class="w-[5.6rem] h-[2.8rem] rounded flex items-center justify-center"><img src="https://sam.coach/wp-content/uploads/2023/03/Image7.png" alt="Logo 6" class="max-h-[2.1rem] w-auto object-contain" loading="lazy" /></div>
+          <div class="w-[5.6rem] h-[2.8rem] rounded flex items-center justify-center"><img src="https://sam.coach/wp-content/uploads/2023/03/Image6.png" alt="Logo 7" class="max-h-[2.1rem] w-auto object-contain" loading="lazy" /></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="py-20 bg-secondary">
+      <div class="container mx-auto px-4">
+        <div class="text-center mb-6">
+          <div class="inline-flex items-center rounded-full px-2.5 py-0.5 text-xs font-semibold transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 mb-4 bg-accent/10 text-accent border-accent/20 hover:bg-accent/20">Magic</div>
+        </div>
+        <h2 class="text-3xl md:text-5xl font-bold text-center mb-6 text-foreground">Next Generation Deal Qualification</h2>
+        <p class="text-xl text-center text-muted-foreground max-w-3xl mx-auto mb-16">Powered by AI, GTM8 helps you focus on high value deals with proven probability of closing and discover sales opportunities that you didn't know existed.</p>
+
+        <div class="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+          <div class="rounded-lg border border-border bg-card text-card-foreground shadow-sm">
+            <div class="p-10">
+              <div class="flex items-start gap-4">
+                <i data-lucide="users" class="w-8 h-8 text-accent flex-shrink-0"></i>
+                <div>
+                  <h3 class="text-xl font-bold mb-2 text-foreground">360° Collaboration</h3>
+                  <p class="text-muted-foreground mb-4">Enterprise sales qualification is a team effort.</p>
+                  <p class="text-muted-foreground">GTM8 provides a real-time qualification playbook for every customer interaction, giving your team deeper insights. With multi-source assessments, you enhance forecast accuracy and drive better outcomes.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="rounded-lg border border-border bg-card text-card-foreground shadow-sm">
+            <div class="p-10">
+              <div class="flex items-start gap-4">
+                <i data-lucide="target" class="w-8 h-8 text-accent flex-shrink-0"></i>
+                <div>
+                  <h3 class="text-xl font-bold mb-2 text-foreground">Amplified Qualification</h3>
+                  <p class="text-muted-foreground mb-4">Missed questions lead to missed forecasts.</p>
+                  <p class="text-muted-foreground">GTM8 sharpens real-time questioning and listening skills, ensuring sales teams capture and validate critical customer insights, boosting forecast accuracy and account strategies.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="rounded-lg border border-border bg-card text-card-foreground shadow-sm">
+            <div class="p-10">
+              <div class="flex items-start gap-4">
+                <i data-lucide="alert-triangle" class="w-8 h-8 text-accent flex-shrink-0"></i>
+                <div>
+                  <h3 class="text-xl font-bold mb-2 text-foreground">Exception Alert</h3>
+                  <p class="text-muted-foreground mb-4">Keeping up with shifting client priorities is tougher than ever, impacting forecast accuracy.</p>
+                  <p class="text-muted-foreground">GTM8 detects deal risks in real time and suggests follow-up actions to keep opportunities on track.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="pricing" class="py-20 bg-background">
+      <div class="container mx-auto px-4">
+        <div class="text-center mb-12">
+          <div class="inline-flex items-center rounded-full px-2.5 py-0.5 text-xs font-semibold transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 mb-4 bg-accent/10 text-accent border-accent/20 hover:bg-accent/20">Pricing</div>
+          <p class="text-xl text-muted-foreground mb-8">Choose the plan that fits your team's needs</p>
+          <div class="inline-flex items-center gap-4 bg-secondary p-1 rounded-lg">
+            <button data-billing="monthly" class="px-6 py-2 rounded-md font-medium transition-colors text-muted-foreground hover:text-foreground">Monthly</button>
+            <button data-billing="annual" class="px-6 py-2 rounded-md font-medium transition-colors">Annual</button>
+          </div>
+          <p id="billing-save" class="text-sm text-accent mt-2 font-medium">Save 20%</p>
+        </div>
+
+        <div class="grid md:grid-cols-3 gap-8 max-w-7xl mx-auto">
+          <div class="rounded-lg border bg-card text-card-foreground shadow-sm relative">
+            <div class="p-6 pt-6">
+              <h3 class="text-2xl font-bold mb-2 text-foreground">AI Meeting Recorder</h3>
+              <p class="text-muted-foreground mb-6">Perfect for individuals and small teams</p>
+              <div class="mb-6">
+                <span data-price="recorder" class="text-4xl font-bold text-foreground">$19</span>
+                <span class="text-muted-foreground">/user/month</span>
+              </div>
+              <button class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 h-11 rounded-md px-8 w-full bg-accent text-accent-foreground hover:bg-accent/90 mb-6">Get Started</button>
+              <div class="space-y-3 text-sm">
+                <div class="flex items-start gap-3"><span class="text-foreground">Unlimited meeting recordings</span></div>
+                <div class="flex items-start gap-3"><span class="text-foreground">AI-powered transcription</span></div>
+                <div class="flex items-start gap-3"><span class="text-foreground">Key moments & highlights</span></div>
+                <div class="flex items-start gap-3"><span class="text-foreground">Action item extraction</span></div>
+                <div class="flex items-start gap-3"><span class="text-foreground">CRM integration</span></div>
+                <div class="flex items-start gap-3"><span class="text-foreground">Searchable transcript library</span></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="rounded-lg border bg-card text-card-foreground shadow-lg border-accent border-2 relative">
+            <div class="absolute -top-4 left-1/2 -translate-x-1/2">
+              <div class="inline-flex items-center rounded-full border px-2.5 py-0.5 text-xs font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 bg-accent text-accent-foreground border-0">Most Popular</div>
+            </div>
+            <div class="p-6 pt-6">
+              <h3 class="text-2xl font-bold mb-2 text-foreground">Revenue Intelligence</h3>
+              <p class="text-muted-foreground mb-6">For growing sales teams seeking insights</p>
+              <div class="mb-6">
+                <span data-price="intelligence" class="text-4xl font-bold text-foreground">$49</span>
+                <span class="text-muted-foreground">/user/month</span>
+              </div>
+              <button class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 h-11 rounded-md px-8 w-full bg-accent text-accent-foreground hover:bg-accent/90 mb-6">Get Started</button>
+              <div class="space-y-3 text-sm">
+                <p class="font-semibold text-foreground mb-2">Everything in AI Meeting Recorder, plus:</p>
+                <div class="flex items-start gap-3"><span class="text-foreground">Deal intelligence & scoring</span></div>
+                <div class="flex items-start gap-3"><span class="text-foreground">Pipeline analytics</span></div>
+                <div class="flex items-start gap-3"><span class="text-foreground">Conversation analytics</span></div>
+                <div class="flex items-start gap-3"><span class="text-foreground">Coaching insights</span></div>
+                <div class="flex items-start gap-3"><span class="text-foreground">Sales playbook templates</span></div>
+                <div class="flex items-start gap-3"><span class="text-foreground">Team collaboration tools</span></div>
+                <div class="flex items-start gap-3"><span class="text-foreground">Advanced reporting</span></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="rounded-lg border bg-card text-card-foreground shadow-sm relative">
+            <div class="p-6 pt-6">
+              <h3 class="text-2xl font-bold mb-2 text-foreground">Revenue Accelerator</h3>
+              <p class="text-muted-foreground mb-6">Enterprise-grade with full customization</p>
+              <div class="mb-6"><span class="text-4xl font-bold text-foreground">Custom</span></div>
+              <button class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 h-11 rounded-md px-8 w-full bg-accent text-accent-foreground hover:bg-accent/90 mb-6">Contact Sales</button>
+              <div class="space-y-3 text-sm">
+                <p class="font-semibold text-foreground mb-2">Everything in Revenue Intelligence, plus:</p>
+                <div class="flex items-start gap-3"><span class="text-foreground">Custom AI models</span></div>
+                <div class="flex items-start gap-3"><span class="text-foreground">Advanced forecasting</span></div>
+                <div class="flex items-start gap-3"><span class="text-foreground">Multi-team rollout support</span></div>
+                <div class="flex items-start gap-3"><span class="text-foreground">Dedicated success manager</span></div>
+                <div class="flex items-start gap-3"><span class="text-foreground">Priority support & training</span></div>
+                <div class="flex items-start gap-3"><span class="text-foreground">Custom integrations</span></div>
+                <div class="flex items-start gap-3"><span class="text-foreground">SSO & advanced security</span></div>
+                <div class="flex items-start gap-3"><span class="text-foreground">SLA guarantee</span></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="request" class="py-20 bg-secondary">
+      <div class="container mx-auto px-4 max-w-4xl">
+        <h2 class="text-3xl md:text-5xl font-bold text-center mb-6 text-foreground">Request Demo</h2>
+        <p class="text-xl text-center text-muted-foreground mb-12">Discover how GTM8 can help you win, keep and grow good customers and salespeople.</p>
+
+         <div class="rounded-lg border bg-card text-card-foreground shadow-sm">
+           <div class="p-6 pt-8">
+             <form class="space-y-6">
+              <p class="text-sm text-gray-400 mb-6">"*" indicates required fields</p>
+              <div class="grid md:grid-cols-2 gap-6">
+                <div class="space-y-2">
+                  <label for="name" class="text-sm font-medium text-foreground">Your name*</label>
+                  <input type="text" id="name" class="flex h-10 w-full rounded-md border border-input bg-background px-3 py-2 text-sm text-foreground ring-offset-background placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent focus-visible:ring-offset-2" required />
+                </div>
+                <div class="space-y-2">
+                  <label for="company" class="text-sm font-medium text-foreground">Company / Organization*</label>
+                  <input type="text" id="company" class="flex h-10 w-full rounded-md border border-input bg-background px-3 py-2 text-sm text-foreground ring-offset-background placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent focus-visible:ring-offset-2" required />
+                </div>
+                <div class="space-y-2">
+                  <label for="email" class="text-sm font-medium text-foreground">Your work e-mail*</label>
+                  <input type="email" id="email" class="flex h-10 w-full rounded-md border border-input bg-background px-3 py-2 text-sm text-foreground ring-offset-background placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent focus-visible:ring-offset-2" required />
+                </div>
+                <div class="space-y-2">
+                  <label for="website" class="text-sm font-medium text-foreground">Company website*</label>
+                  <input type="url" id="website" class="flex h-10 w-full rounded-md border border-input bg-background px-3 py-2 text-sm text-foreground ring-offset-background placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent focus-visible:ring-offset-2" required />
+                </div>
+                <div class="space-y-2">
+                  <label for="phone" class="text-sm font-medium text-foreground">Your phone number*</label>
+                  <input type="tel" id="phone" class="flex h-10 w-full rounded-md border border-input bg-background px-3 py-2 text-sm text-foreground ring-offset-background placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent focus-visible:ring-offset-2" required />
+                </div>
+                <div class="space-y-2">
+                  <label for="salespeople" class="text-sm font-medium text-foreground">How many salespeople in your company*</label>
+                  <input type="number" id="salespeople" min="1" class="flex h-10 w-full rounded-md border border-input bg-background px-3 py-2 text-sm text-foreground ring-offset-background placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent focus-visible:ring-offset-2" required />
+                </div>
+              </div>
+              <div class="space-y-2">
+                <label for="message" class="text-sm font-medium text-foreground">Message</label>
+                <textarea id="message" rows="4" class="flex w-full rounded-md border border-input bg-background px-3 py-2 text-sm text-foreground ring-offset-background placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent focus-visible:ring-offset-2"></textarea>
+              </div>
+              <button type="submit" class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 h-11 rounded-md px-8 w-full bg-accent text-accent-foreground hover:bg-accent/90">Submit Request</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="bg-primary text-primary-foreground pt-14 pb-8">
+      <div class="container mx-auto px-6 md:px-10">
+        <div class="grid md:grid-cols-4 gap-8 mb-8">
+          <div>
+            <img src="https://raw.githubusercontent.com/RUIS94/clone-sam-redesign/main/src/components/logo2.png" alt="GTM8 logo" class="h-8 w-auto mb-4" onerror="this.onerror=null;this.src='https://placehold.co/120x32/png?text=GTM8+Logo';" />
+            <p class="text-sm mb-4 opacity-90">8 Hadenfeld Ave<br />Macquarie Park NSW 2113<br />Australia</p>
+            <p class="text-sm opacity-90">Email: gtm@gtm8.ai</p>
+          </div>
+          <div>
+            <h4 class="font-semibold mb-4">What GTM8 does</h4>
+            <ul class="space-y-2 text-sm opacity-90">
+              <li><a href="#" class="hover:text-accent transition-colors">Deal Qualification</a></li>
+              <li><a href="#" class="hover:text-accent transition-colors">Sales Coaching</a></li>
+              <li><a href="#" class="hover:text-accent transition-colors">Forecasting</a></li>
+              <li><a href="#" class="hover:text-accent transition-colors">Meeting Intelligence</a></li>
+              <li><a href="#" class="hover:text-accent transition-colors">Revenue Analytics</a></li>
+            </ul>
+          </div>
+          <div>
+            <h4 class="font-semibold mb-4">Meet GTM8</h4>
+            <ul class="space-y-2 text-sm opacity-90">
+              <li><a href="#" class="hover:text-accent transition-colors">About Us</a></li>
+              <li><a href="#" class="hover:text-accent transition-colors">Our Team</a></li>
+              <li><a href="#" class="hover:text-accent transition-colors">Careers</a></li>
+              <li><a href="#" class="hover:text-accent transition-colors">Press</a></li>
+              <li><a href="#" class="hover:text-accent transition-colors">Contact</a></li>
+            </ul>
+          </div>
+          <div>
+            <h4 class="font-semibold mb-4">Newsletter</h4>
+            <p class="text-sm mb-4 opacity-90">Stay connected with the latest updates and insights</p>
+            <form class="space-y-3">
+              <input type="email" placeholder="Your email" class="flex h-10 w-full rounded-md border border-input bg-background px-3 py-2 text-sm text-foreground ring-offset-background placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent focus-visible:ring-offset-2" />
+              <button type="submit" class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 h-11 rounded-md px-8 w-full bg-accent text-accent-foreground hover:bg-accent/90">Subscribe</button>
+            </form>
+          </div>
+        </div>
+        <div class="pt-6 flex items-center justify-between text-xs opacity-75">
+          <p>© 2025 GTM8.ai. All rights reserved.</p>
+          <div class="flex items-center gap-3">
+            <a href="#" class="hover:text-accent transition-colors">Security</a>
+            <span class="opacity-50">|</span>
+            <a href="#" class="hover:text-accent transition-colors">Privacy</a>
+            <span class="opacity-50">|</span>
+            <a href="#" class="hover:text-accent transition-colors">Terms</a>
+          </div>
+        </div>
+      </div>
+  </footer>
+  <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      var tabButtons = Array.prototype.slice.call(document.querySelectorAll('[data-tab]'))
+      var tabContents = Array.prototype.slice.call(document.querySelectorAll('[data-tab-content]'))
+      function activateTab(val) {
+        tabButtons.forEach(function (b) {
+          if (b.getAttribute('data-tab') === val) {
+            b.classList.add('bg-accent', 'text-accent-foreground')
+          } else {
+            b.classList.remove('bg-accent', 'text-accent-foreground')
+          }
+        })
+        tabContents.forEach(function (c) {
+          if (c.getAttribute('data-tab-content') === val) {
+            c.classList.remove('hidden')
+          } else {
+            c.classList.add('hidden')
+          }
+        })
+      }
+      tabButtons.forEach(function (b) {
+        b.addEventListener('click', function () {
+          activateTab(b.getAttribute('data-tab'))
+        })
+      })
+      activateTab('ae')
+
+      var billingButtons = Array.prototype.slice.call(document.querySelectorAll('[data-billing]'))
+      var priceRecorder = document.querySelector('[data-price="recorder"]')
+      var priceIntelligence = document.querySelector('[data-price="intelligence"]')
+      var saveLine = document.getElementById('billing-save')
+      function setBilling(val) {
+        billingButtons.forEach(function (b) {
+          if (b.getAttribute('data-billing') === val) {
+            b.classList.add('bg-accent', 'text-accent-foreground')
+            b.classList.remove('text-muted-foreground')
+            b.classList.remove('hover:text-foreground')
+          } else {
+            b.classList.remove('bg-accent', 'text-accent-foreground')
+            b.classList.add('text-muted-foreground')
+            b.classList.add('hover:text-foreground')
+          }
+        })
+        if (val === 'annual') {
+          if (priceRecorder) priceRecorder.textContent = '$19'
+          if (priceIntelligence) priceIntelligence.textContent = '$49'
+          if (saveLine) saveLine.style.display = 'block'
+        } else {
+          if (priceRecorder) priceRecorder.textContent = '$24'
+          if (priceIntelligence) priceIntelligence.textContent = '$59'
+          if (saveLine) saveLine.style.display = 'none'
+        }
+      }
+      billingButtons.forEach(function (b) {
+        b.addEventListener('click', function () {
+          setBilling(b.getAttribute('data-billing'))
+        })
+      })
+      setBilling('annual')
+      if (window.lucide) {
+        window.lucide.createIcons();
+      }
+    })
+  </script>
+  </body>
+  </html>
