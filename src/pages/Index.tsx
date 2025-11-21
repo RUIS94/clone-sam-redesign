@@ -23,7 +23,7 @@ const Index = () => {
         <div className="container mx-auto px-2 md:px-4 py-4">
           <div className="flex items-center justify-between">
             <div className="flex items-center ml-0 md:ml-8">
-              <img src={logo} alt="GTM8 logo" className="h-8 w-auto" />
+              <img src={logo} alt="GTM8 logo" className="h-[1.6rem] md:h-8 w-auto" />
             </div>
             <div className="hidden md:flex items-center gap-8">
               <a href="#product" onClick={(e)=>{e.preventDefault();scrollToRequest();}} className="text-sm font-medium text-foreground hover:text-accent transition-colors">
@@ -114,7 +114,7 @@ const Index = () => {
                   <SelectValue placeholder="Choose role" />
                 </SelectTrigger>
                 <SelectContent>
-                  <SelectItem value="ae">AE</SelectItem>
+                  <SelectItem value="ae">Account Executive</SelectItem>
                   <SelectItem value="leaders">Sales Leaders</SelectItem>
                   <SelectItem value="presales">Pre-Sales</SelectItem>
                   <SelectItem value="sdr">SDR</SelectItem>
